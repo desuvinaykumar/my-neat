@@ -17,8 +17,6 @@ var mongodb_connection_string = 'mongodb://desuvinaykumar:Mydb*123@ds353738.mlab
 
 var et = require('elementtree');
 
-var webClients = [];
-
 // configuration =================
 
 mongoose.connect(mongodb_connection_string);     // connect to mongoDB database on modulus.io
@@ -624,17 +622,6 @@ app.delete('/api/WSTemplates/:codeId', function(req, res) {
 	});
 });
 //-----------------------------------------------------------------------------------------------
-// get all web clients
-app.get('/api/WebClients', function(req, res) {
-
-	var temp = [];
-	for(var i in webClients){
-		temp.push({"clientId" : (typeof webClients[i]._sender)});
-	}
-	res.json(temp);
-	
-});
-
 // get all TestCodes
 app.get('/api/TestCodes', function(req, res) {
 
