@@ -572,6 +572,15 @@ app.get('/api/WSTemplates', function(req, res) {
 });
 
 app.post('/api/WSTemplates', function(req, res) {
+	res.json({
+					name : req.body.name,
+					url : req.body.url,
+					httpmethod : req.body.httpmethod,
+					requestType : req.body.requestType,
+					responseType : req.body.responseType,
+					requestFormat : req.body.requestFormat,
+				});
+	return;
 	// create a todo, information comes from AJAX request from Angular
 	WSTemplates.find({name:req.body.name}, function(err, template){
 		if (err){
