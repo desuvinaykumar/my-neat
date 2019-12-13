@@ -1,0 +1,45 @@
+<div ng-controller="AnalyzeFileController">
+	<h4 class="text-center">GOLD Logs Analyzer</h4>
+	<div class="row">
+		<div class="col-sm-offset-3 col-sm-4">
+			<input type = "file" class="form-control input-sm" id="fileSelected"/>
+		</div>
+		<div class="col-sm-2 text-center">
+			<button type="submit" class="btn btn-primary btn-block btn-sm" ng-click="uploadFile()">Upload for analysis</button>
+		</div>
+	</div>
+	<div class="row" style="padding-top:20px;">
+		<div class="col-sm-3">
+			<ul class="list-group">
+				<li class="list-group-item list-group-item-info" style="font-weight:bold;color:black;">List of Files</li>
+				<li class="list-group-item" ng-repeat="file in filesList">
+					{{file.fileName}}
+					<span class="glyphicon glyphicon-check pull-right" style="cursor:pointer" ng-click="processFile(file.fileName)"></span>
+					<span class="glyphicon glyphicon-remove pull-right" style="cursor:pointer;margin-right:10px" ng-click="deleteFile(file.fileName)"></span>
+				</li>
+			</ul>
+		</div>
+		<div class="col-sm-9">
+			<div class="table-responsive">
+				<table class="table table-bordered table-striped">
+					<thead>
+						<tr class="info">
+							<th>Web Service Name</th>
+							<th>Start Time</th>
+							<th>End Time</th>
+							<th>Response time</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr ng-repeat="result in analysisResult">
+							<td>{{result.methodName}}</td>
+							<td>{{result.startTime}}</td>
+							<td>{{result.endTime}}</td>
+							<td>{{result.executionTime}}</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+</div>

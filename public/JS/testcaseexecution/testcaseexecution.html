@@ -1,0 +1,38 @@
+<div ng-controller="TestCaseExecutionController">
+	<h4 class="text-center">Test Case Execution</h4>
+	<div class="row">
+		<div class="col-sm-offset-4 col-sm-3">
+			<select class="form-control input-sm" placeholder="" ng-model="execution.testcase">
+				<option value="" selected>Select a Test Case</option>
+				<option ng-repeat="tc in testcaseslist" value="{{tc.name}}" selected>{{tc.name}}</option>
+			</select>
+		</div>
+		<div class="col-sm-1 text-center">
+			<button type="submit" class="btn btn-primary btn-block btn-sm" ng-click="execute()">Execute</button>
+		</div>
+		
+	</div>
+	<h4 class="text-center">Execution Results</h4>
+	<div class="table-responsive">
+		<table class="table table-bordered table-striped">
+			<thead>
+				<tr class="info">
+					<th>Test Case Name</th>
+					<th>Request</th>
+					<th>Response</th>
+					<th>Status</th>
+					<th>Action</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr ng-repeat="result in executionresults">
+					<td>{{result.testcasename}}</td>
+					<td><div style="max-height: 35px;overflow: auto;">{{result.reqText}}</div></td>
+					<td><div style="max-height: 35px;overflow: auto;">{{result.resText}}</div></td>
+					<td><div style="max-height: 35px;overflow: auto;">{{result.status}}</div></td>
+					<td><span class="glyphicon glyphicon-remove" ng-click="removeExecutionResult(result._id)"></span></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>

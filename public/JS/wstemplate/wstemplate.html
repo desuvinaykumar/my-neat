@@ -1,0 +1,140 @@
+<div ng-controller="WSTemplateController">
+	<h4 class="text-center">Web Service Template Creation/Modification</h4>
+	<div class="row">
+		<div class="col-sm-4">
+			<div class="form-group">
+				<div class="input-group">
+					<div class="input-group-addon">Template Name</div>
+					<input type="text" class="form-control input-sm" ng-model="newTemplate.name">
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="input-group">
+					<div class="input-group-addon">Web Service URL</div>
+					<input type="text" class="form-control input-sm" ng-model="newTemplate.url">
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-4">
+			<div class="form-group">
+				<div class="input-group">
+					<div class="input-group-addon">Content Type</div>
+					<select class="form-control input-sm" ng-model="newTemplate.requestType">
+						<option value="" selected></option>
+						<option value="text/json">JSON</option>
+						<option value="text/xml">XML</option>
+					</select>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="input-group">
+					<div class="input-group-addon">Return Type</div>
+					<select class="form-control input-sm" ng-model="newTemplate.responseType">
+						<option value="" selected></option>
+						<option value="text/json">JSON</option>
+						<option value="text/xml">XML</option>
+					</select>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-4">
+			<div class="form-group">
+				<div class="input-group">
+					<div class="input-group-addon">Request Sample</div>
+					<textarea class="form-control input-sm" rows="3" ng-model="newTemplate.requestFormat"></textarea>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-offset-4 col-sm-3">
+			<div class="form-group">
+				<div class="input-group">
+					<div class="input-group-addon">HTTP Method</div>
+					<select class="form-control input-sm" ng-model="newTemplate.httpmethod">
+						<option value="" selected></option>
+						<option value="post">POST</option>
+						<option value="get">GET</option>
+						<option value="put">PUT</option>
+						<option value="delete">DELETE</option>
+						<option value="head">HEAD</option>
+						<option value="options">OPTIONS</option>
+						<option value="connect">CONNECT</option>
+					</select>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-1">
+			<button type="submit" class="btn btn-primary btn-block btn-sm" ng-click="createWSTemplate()">Add</button>
+		</div>
+	</div>
+	<!--<div class="row" style="padding-bottom:15px;">
+		<div class="col-sm-1 ">
+			<input type="text" class="form-control input-sm" placeholder="Template Name" ng-model="newTemplate.name">
+		</div>
+		<div class="col-sm-2 ">
+			<input type="text" class="form-control input-sm" placeholder="Web Service URL" ng-model="newTemplate.url">
+		</div>
+		<div class="col-sm-1 ">
+			<select class="form-control input-sm" placeholder="Request type" ng-model="newTemplate.httpmethod">
+				<option value="" selected>Method</option>
+				<option value="post">POST</option>
+				<option value="get">GET</option>
+				<option value="put">PUT</option>
+				<option value="delete">DELETE</option>
+				<option value="head">HEAD</option>
+				<option value="options">OPTIONS</option>
+				<option value="connect">CONNECT</option>
+			</select>
+		</div>
+		<div class="col-sm-2 ">
+			<select class="form-control input-sm" placeholder="Request type" ng-model="newTemplate.requestType">
+				<option value="" selected>Content-Type</option>
+				<option value="text/json">JSON</option>
+				<option value="text/xml">XML</option>
+			</select>
+		</div>
+		<div class="col-sm-2 ">
+			<select class="form-control input-sm" placeholder="Response type" ng-model="newTemplate.responseType">
+				<option value="" selected>Accept-Type</option>
+				<option value="text/json">JSON</option>
+				<option value="text/xml">XML</option>
+			</select>
+		</div>
+		<div class="col-sm-3 ">
+			<input type="text" class="form-control input-sm" placeholder="Request Sample" ng-model="newTemplate.requestFormat">
+		</div>
+		<div class="col-sm-1 text-center">
+			<button type="submit" class="btn btn-primary btn-block btn-sm" ng-click="createWSTemplate()">Add</button>
+		</div>
+	</div>-->
+	<div class="table-responsive">
+		<table class="table table-bordered table-striped">
+			<thead>
+				<tr class="info">
+					<th>Template Name</th>
+					<th>Web service URL</th>
+					<th>Method</th>
+					<th>Request type</th>
+					<th>Response type</th>
+					<th>Request Format</th>
+					<th>Actions</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr ng-repeat="template in templatesList">
+					<td>{{template.name}}</td>
+					<td>{{template.url}}</td>
+					<td>{{template.httpmethod}}</td>
+					<td>{{template.requestType}}</td>
+					<td>{{template.responseType}}</td>
+					<td><div style="height: 16px;overflow: hidden;">{{template.requestFormat}}</div></td>
+					<td>
+						  <span class="glyphicon glyphicon-remove" ng-click="removeWSTemplate(template._id)"></span>
+						  <!--span class="glyphicon glyphicon-pencil" ng-click="editWSTemplate(template)"></span-->
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>

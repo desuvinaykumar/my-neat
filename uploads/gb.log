@@ -1,0 +1,2084 @@
+02/08/17 13:28:40.INFO.120 (SOAPEngine) SOAPMessageFactory= class com.sun.xml.internal.messaging.saaj.soap.ver1_1.SOAPMessageFactory1_1Impl
+02/08/17 13:28:40.INFO.120 (SOAPEngine) SOAPElementFactory= class com.sun.xml.internal.messaging.saaj.soap.ver1_1.SOAPFactory1_1Impl
+02/08/17 13:28:40.DEBUG.120.LOGID[594625] Methode Java = getUserInformations
+02/08/17 13:28:40.DEBUG.120.LOGID[594625] Class Java = com.aldata.generic.login.GenericLoginWebService
+02/08/17 13:28:40.DEBUG.120.LOGID[594625] select TO_CHAR(CURRENT_DATE,'DD/MM/RR') from dual
+02/08/17 13:28:40.DEBUG.120.LOGID[594625] <queryArray>
+02/08/17 13:28:40.DEBUG.120.LOGID[594625] select TO_CHAR(CURRENT_DATE,'DD/MM/RR') from dual
+02/08/17 13:28:40.DEBUG.120.LOGID[594625] No parameters
+02/08/17 13:28:40.DEBUG.120.LOGID[594625] Retrieving 1 Object(s)...
+02/08/17 13:28:40.DEBUG.120.LOGID[594625] [SELECT] Temps d'execution (ms) : [198]
+02/08/17 13:28:40.DEBUG.120.LOGID[594625] </queryArray>
+02/08/17 13:28:41.DEBUG.120.LOGID[594625] <queryArray>
+02/08/17 13:28:41.DEBUG.120.LOGID[594625] select substr(LANJAVA, 1,2), substr(LANJAVA, 4,5) 
+from langues, adm_users t  
+where aususer = :USER: 
+and ausappli = :APPLI:  
+and langue = LANCODE 
+
+02/08/17 13:28:41.DEBUG.120.LOGID[594625] Query parameters
+:USER:			gb
+:APPLI:			V6MOBILETEST
+
+02/08/17 13:28:41.DEBUG.120.LOGID[594625] Retrieving 1 Object(s)...
+02/08/17 13:28:41.DEBUG.120.LOGID[594625] [SELECT] Temps d'execution (ms) : [230]
+02/08/17 13:28:41.DEBUG.120.LOGID[594625] </queryArray>
+02/08/17 13:28:41.DEBUG.120.LOGID[594625] select substr(LANJAVA, 1,2), substr(LANJAVA, 4,5) 
+from langues, adm_users t  
+where aususer = :USER: 
+and ausappli = :APPLI:  
+and langue = LANCODE 
+
+02/08/17 13:28:41.DEBUG.120.LOGID[594625] <queryArray>
+02/08/17 13:28:41.DEBUG.120.LOGID[594625] SELECT langue FROM adm_users WHERE aususer = :USER: AND ausappli = 'V6MOBILETEST' 
+02/08/17 13:28:41.DEBUG.120.LOGID[594625] Query parameters
+:USER:			gb
+
+02/08/17 13:28:41.DEBUG.120.LOGID[594625] Retrieving 1 Object(s)...
+02/08/17 13:28:41.DEBUG.120.LOGID[594625] [SELECT] Temps d'execution (ms) : [202]
+02/08/17 13:28:41.DEBUG.120.LOGID[594625] </queryArray>
+02/08/17 13:28:41.DEBUG.120.LOGID[594625] <queryArray>
+02/08/17 13:28:41.DEBUG.120.LOGID[594625] select 1 from user_tables where upper(table_name)='TB_VERSION'
+02/08/17 13:28:41.DEBUG.120.LOGID[594625] Query parameters
+
+02/08/17 13:28:41.DEBUG.120.LOGID[594625] Retrieving 0 Object(s)...
+02/08/17 13:28:41.DEBUG.120.LOGID[594625] [SELECT] Temps d'execution (ms) : [236]
+02/08/17 13:28:41.DEBUG.120.LOGID[594625] </queryArray>
+02/08/17 13:28:41.DEBUG.120.LOGID[594625] <queryArray>
+02/08/17 13:28:41.DEBUG.120.LOGID[594625] select verlabqa from (select verid, verlabqa, verdatqa from version where verlabqa like '%' order by verid desc) where rownum = 1
+02/08/17 13:28:41.DEBUG.120.LOGID[594625] Query parameters
+
+02/08/17 13:28:42.DEBUG.120.LOGID[594625] Retrieving 1 Object(s)...
+02/08/17 13:28:42.DEBUG.120.LOGID[594625] [SELECT] Temps d'execution (ms) : [235]
+02/08/17 13:28:42.DEBUG.120.LOGID[594625] </queryArray>
+02/08/17 13:28:42.DEBUG.120.LOGID[594625] <queryArray>
+02/08/17 13:28:42.DEBUG.120.LOGID[594625] SELECT langue FROM adm_users WHERE aususer = :USER: AND ausappli = 'V6MOBILETEST' 
+02/08/17 13:28:42.DEBUG.120.LOGID[594625] Query parameters
+:USER:			gb
+
+02/08/17 13:28:42.DEBUG.120.LOGID[594625] Retrieving 1 Object(s)...
+02/08/17 13:28:42.DEBUG.120.LOGID[594625] [SELECT] Temps d'execution (ms) : [201]
+02/08/17 13:28:42.DEBUG.120.LOGID[594625] </queryArray>
+02/08/17 13:28:42.DEBUG.120.LOGID[594625] select APCLASTUPDATE from ADM_PROFILESCACHE where APCAPPLI = :appli: and APCLANGUE = :lang: and APCID = 'LabelManager' and APCNEEDSUPDATE = 0
+02/08/17 13:28:42.DEBUG.120.LOGID[594625] <queryArray>
+02/08/17 13:28:42.DEBUG.120.LOGID[594625] select APCLASTUPDATE from ADM_PROFILESCACHE where APCAPPLI = :appli: and APCLANGUE = :lang: and APCID = 'LabelManager' and APCNEEDSUPDATE = 0
+02/08/17 13:28:42.DEBUG.120.LOGID[594625] Query parameters
+:appli:			V6MOBILETEST
+:lang:			GB
+
+02/08/17 13:28:42.DEBUG.120.LOGID[594625] Retrieving 1 Object(s)...
+02/08/17 13:28:42.DEBUG.120.LOGID[594625] [SELECT] Temps d'execution (ms) : [216]
+02/08/17 13:28:42.DEBUG.120.LOGID[594625] </queryArray>
+02/08/17 13:28:43.DEBUG.120.LOGID[594626] Methode Java = getUserSettings
+02/08/17 13:28:43.DEBUG.120.LOGID[594626] Class Java = com.aldata.generic.login.GenericLoginWebService
+02/08/17 13:28:43.DEBUG.120.LOGID[594626] <queryArray>
+02/08/17 13:28:43.DEBUG.120.LOGID[594626] select AUSETPARAMID, AUSETPARAMVAL from ADM_USERSETTINGS where AUSETUSER = :userName:  and AUSETAPPLI = :application:
+02/08/17 13:28:43.DEBUG.120.LOGID[594626] Query parameters
+:userName:		gb
+:application:		V6MOBILETEST
+
+02/08/17 13:28:43.DEBUG.120.LOGID[594626] Retrieving 11 Object(s)...
+02/08/17 13:28:43.DEBUG.120.LOGID[594626] [SELECT] Temps d'execution (ms) : [386]
+02/08/17 13:28:43.DEBUG.120.LOGID[594626] </queryArray>
+02/08/17 13:28:44.DEBUG.120.LOGID[594627] Methode Java = GWSMobileMenuInit
+02/08/17 13:28:44.DEBUG.120.LOGID[594627] Class Java = ois.webservices.gsm.common.WSMobileMenuInit
+02/08/17 13:28:44.DEBUG.120.LOGID[594627] <queryArray>
+02/08/17 13:28:44.DEBUG.120.LOGID[594627]   SELECT tameident menunumber , TAMEDESC menudesc, AMEOBJET transactionName, null transCount FROM ADM_MENUS M, TRA_ADM_MENUS T, ADM_PROFILES P, ADM_USERS U      WHERE T.LANGUE = :LANG:       AND APRAPPLI= :APPLI:   AND T.TAMEAPPLI = AMEAPPLI           AND APRIDENT = AMEIDENT        AND T.TAMEIDENT = AMEIDENT        AND APRPROF = AUSPROF     AND AUSUSER = :USER:    AND APRACCES = 1    AND AMEAPPLI = APRAPPLI  AND APRAPPLI = AUSAPPLI    ORDER BY decode(ameparent,'', 0,ameseq)  
+02/08/17 13:28:44.DEBUG.120.LOGID[594627] Query parameters
+:LANG:			GB
+:APPLI:			V6MOBILETEST
+:USER:			gb
+:parent:		54000
+
+02/08/17 13:28:45.DEBUG.120.LOGID[594627] Retrieving 30 Object(s)...
+02/08/17 13:28:45.DEBUG.120.LOGID[594627] [SELECT] Temps d'execution (ms) : [789]
+02/08/17 13:28:45.DEBUG.120.LOGID[594627] </queryArray>
+02/08/17 13:28:45.DEBUG.120.LOGID[594627] <queryArray>
+02/08/17 13:28:45.DEBUG.120.LOGID[594627]   SELECT tameident menunumber , TAMEDESC menudesc, AMEOBJET transactionName, null transCount FROM ADM_MENUS M, TRA_ADM_MENUS T, ADM_PROFILES P, ADM_USERS U      WHERE T.LANGUE = :LANG:       AND APRAPPLI= :APPLI:   AND T.TAMEAPPLI = AMEAPPLI           AND APRIDENT = AMEIDENT        AND T.TAMEIDENT = AMEIDENT        AND APRPROF = AUSPROF     AND AUSUSER = :USER:    AND APRACCES = 1    AND AMEAPPLI = APRAPPLI  AND APRAPPLI = AUSAPPLI    ORDER BY decode(ameparent,'', 0,ameseq)  
+02/08/17 13:28:45.DEBUG.120.LOGID[594627] Query parameters
+:LANG:			GB
+:APPLI:			V6MOBILETEST
+:USER:			gb
+:parent:		54001
+
+02/08/17 13:28:45.DEBUG.120.LOGID[594627] Retrieving 30 Object(s)...
+02/08/17 13:28:45.DEBUG.120.LOGID[594627] [SELECT] Temps d'execution (ms) : [825]
+02/08/17 13:28:45.DEBUG.120.LOGID[594627] </queryArray>
+02/08/17 13:32:50.DEBUG.126.LOGID[594631] Methode Java = clearTasksTakenBy
+02/08/17 13:32:50.DEBUG.126.LOGID[594631] Class Java = com.aldata.webservices.rest.TaskEngineWebService
+02/08/17 13:32:50.DEBUG.126.LOGID[594631] <executePLSQL>
+02/08/17 13:32:50.DEBUG.126.LOGID[594631] begin PKTask.clearTasksTakenBy(594631, ?, ?); end;
+02/08/17 13:32:50.DEBUG.126.LOGID[594631] register output : 2 4
+02/08/17 13:32:50.DEBUG.126.LOGID[594631] Output : 0
+02/08/17 13:32:50.DEBUG.126.LOGID[594631] </executePLSQL>
+02/08/17 13:33:00.INFO.124 (SOAPEngine) SOAPMessageFactory= class com.sun.xml.internal.messaging.saaj.soap.ver1_1.SOAPMessageFactory1_1Impl
+02/08/17 13:33:00.INFO.124 (SOAPEngine) SOAPElementFactory= class com.sun.xml.internal.messaging.saaj.soap.ver1_1.SOAPFactory1_1Impl
+02/08/17 13:33:01.DEBUG.124.LOGID[594632] Methode Java = getUserInformations
+02/08/17 13:33:01.DEBUG.124.LOGID[594632] Class Java = com.aldata.generic.login.GenericLoginWebService
+02/08/17 13:33:01.DEBUG.124.LOGID[594632] select TO_CHAR(CURRENT_DATE,'DD/MM/RR') from dual
+02/08/17 13:33:01.DEBUG.124.LOGID[594632] <queryArray>
+02/08/17 13:33:01.DEBUG.124.LOGID[594632] select TO_CHAR(CURRENT_DATE,'DD/MM/RR') from dual
+02/08/17 13:33:01.DEBUG.124.LOGID[594632] No parameters
+02/08/17 13:33:01.DEBUG.124.LOGID[594632] Retrieving 1 Object(s)...
+02/08/17 13:33:01.DEBUG.124.LOGID[594632] [SELECT] Temps d'execution (ms) : [183]
+02/08/17 13:33:01.DEBUG.124.LOGID[594632] </queryArray>
+02/08/17 13:33:01.DEBUG.124.LOGID[594632] <queryArray>
+02/08/17 13:33:01.DEBUG.124.LOGID[594632] select substr(LANJAVA, 1,2), substr(LANJAVA, 4,5) 
+from langues, adm_users t  
+where aususer = :USER: 
+and ausappli = :APPLI:  
+and langue = LANCODE 
+
+02/08/17 13:33:01.DEBUG.124.LOGID[594632] Query parameters
+:USER:			gb
+:APPLI:			V6MOBILETEST
+
+02/08/17 13:33:01.DEBUG.124.LOGID[594632] Retrieving 1 Object(s)...
+02/08/17 13:33:01.DEBUG.124.LOGID[594632] [SELECT] Temps d'execution (ms) : [239]
+02/08/17 13:33:01.DEBUG.124.LOGID[594632] </queryArray>
+02/08/17 13:33:01.DEBUG.124.LOGID[594632] select substr(LANJAVA, 1,2), substr(LANJAVA, 4,5) 
+from langues, adm_users t  
+where aususer = :USER: 
+and ausappli = :APPLI:  
+and langue = LANCODE 
+
+02/08/17 13:33:01.DEBUG.124.LOGID[594632] <queryArray>
+02/08/17 13:33:01.DEBUG.124.LOGID[594632] SELECT langue FROM adm_users WHERE aususer = :USER: AND ausappli = 'V6MOBILETEST' 
+02/08/17 13:33:01.DEBUG.124.LOGID[594632] Query parameters
+:USER:			gb
+
+02/08/17 13:33:01.DEBUG.124.LOGID[594632] Retrieving 1 Object(s)...
+02/08/17 13:33:01.DEBUG.124.LOGID[594632] [SELECT] Temps d'execution (ms) : [194]
+02/08/17 13:33:01.DEBUG.124.LOGID[594632] </queryArray>
+02/08/17 13:33:01.DEBUG.124.LOGID[594632] <queryArray>
+02/08/17 13:33:01.DEBUG.124.LOGID[594632] select 1 from user_tables where upper(table_name)='TB_VERSION'
+02/08/17 13:33:01.DEBUG.124.LOGID[594632] Query parameters
+
+02/08/17 13:33:01.DEBUG.124.LOGID[594632] Retrieving 0 Object(s)...
+02/08/17 13:33:01.DEBUG.124.LOGID[594632] [SELECT] Temps d'execution (ms) : [192]
+02/08/17 13:33:01.DEBUG.124.LOGID[594632] </queryArray>
+02/08/17 13:33:01.DEBUG.124.LOGID[594632] <queryArray>
+02/08/17 13:33:01.DEBUG.124.LOGID[594632] select verlabqa from (select verid, verlabqa, verdatqa from version where verlabqa like '%' order by verid desc) where rownum = 1
+02/08/17 13:33:01.DEBUG.124.LOGID[594632] Query parameters
+
+02/08/17 13:33:02.DEBUG.124.LOGID[594632] Retrieving 1 Object(s)...
+02/08/17 13:33:02.DEBUG.124.LOGID[594632] [SELECT] Temps d'execution (ms) : [183]
+02/08/17 13:33:02.DEBUG.124.LOGID[594632] </queryArray>
+02/08/17 13:33:02.DEBUG.124.LOGID[594632] <queryArray>
+02/08/17 13:33:02.DEBUG.124.LOGID[594632] SELECT langue FROM adm_users WHERE aususer = :USER: AND ausappli = 'V6MOBILETEST' 
+02/08/17 13:33:02.DEBUG.124.LOGID[594632] Query parameters
+:USER:			gb
+
+02/08/17 13:33:02.DEBUG.124.LOGID[594632] Retrieving 1 Object(s)...
+02/08/17 13:33:02.DEBUG.124.LOGID[594632] [SELECT] Temps d'execution (ms) : [198]
+02/08/17 13:33:02.DEBUG.124.LOGID[594632] </queryArray>
+02/08/17 13:33:02.DEBUG.124.LOGID[594632] select APCLASTUPDATE from ADM_PROFILESCACHE where APCAPPLI = :appli: and APCLANGUE = :lang: and APCID = 'LabelManager' and APCNEEDSUPDATE = 0
+02/08/17 13:33:02.DEBUG.124.LOGID[594632] <queryArray>
+02/08/17 13:33:02.DEBUG.124.LOGID[594632] select APCLASTUPDATE from ADM_PROFILESCACHE where APCAPPLI = :appli: and APCLANGUE = :lang: and APCID = 'LabelManager' and APCNEEDSUPDATE = 0
+02/08/17 13:33:02.DEBUG.124.LOGID[594632] Query parameters
+:appli:			V6MOBILETEST
+:lang:			GB
+
+02/08/17 13:33:02.DEBUG.124.LOGID[594632] Retrieving 1 Object(s)...
+02/08/17 13:33:02.DEBUG.124.LOGID[594632] [SELECT] Temps d'execution (ms) : [199]
+02/08/17 13:33:02.DEBUG.124.LOGID[594632] </queryArray>
+02/08/17 13:33:03.DEBUG.124.LOGID[594633] Methode Java = getUserSettings
+02/08/17 13:33:03.DEBUG.124.LOGID[594633] Class Java = com.aldata.generic.login.GenericLoginWebService
+02/08/17 13:33:03.DEBUG.124.LOGID[594633] <queryArray>
+02/08/17 13:33:03.DEBUG.124.LOGID[594633] select AUSETPARAMID, AUSETPARAMVAL from ADM_USERSETTINGS where AUSETUSER = :userName:  and AUSETAPPLI = :application:
+02/08/17 13:33:03.DEBUG.124.LOGID[594633] Query parameters
+:userName:		gb
+:application:		V6MOBILETEST
+
+02/08/17 13:33:03.DEBUG.124.LOGID[594633] Retrieving 11 Object(s)...
+02/08/17 13:33:03.DEBUG.124.LOGID[594633] [SELECT] Temps d'execution (ms) : [375]
+02/08/17 13:33:03.DEBUG.124.LOGID[594633] </queryArray>
+02/08/17 13:33:04.DEBUG.124.LOGID[594634] Methode Java = GWSMobileMenuInit
+02/08/17 13:33:04.DEBUG.124.LOGID[594634] Class Java = ois.webservices.gsm.common.WSMobileMenuInit
+02/08/17 13:33:04.DEBUG.124.LOGID[594634] <queryArray>
+02/08/17 13:33:04.DEBUG.124.LOGID[594634]   SELECT tameident menunumber , TAMEDESC menudesc, AMEOBJET transactionName, null transCount FROM ADM_MENUS M, TRA_ADM_MENUS T, ADM_PROFILES P, ADM_USERS U      WHERE T.LANGUE = :LANG:       AND APRAPPLI= :APPLI:   AND T.TAMEAPPLI = AMEAPPLI           AND APRIDENT = AMEIDENT        AND T.TAMEIDENT = AMEIDENT        AND APRPROF = AUSPROF     AND AUSUSER = :USER:    AND APRACCES = 1    AND AMEAPPLI = APRAPPLI  AND APRAPPLI = AUSAPPLI    ORDER BY decode(ameparent,'', 0,ameseq)  
+02/08/17 13:33:04.DEBUG.124.LOGID[594634] Query parameters
+:LANG:			GB
+:APPLI:			V6MOBILETEST
+:USER:			gb
+:parent:		54000
+
+02/08/17 13:33:04.DEBUG.124.LOGID[594634] Retrieving 30 Object(s)...
+02/08/17 13:33:04.DEBUG.124.LOGID[594634] [SELECT] Temps d'execution (ms) : [727]
+02/08/17 13:33:04.DEBUG.124.LOGID[594634] </queryArray>
+02/08/17 13:33:04.DEBUG.124.LOGID[594634] <queryArray>
+02/08/17 13:33:04.DEBUG.124.LOGID[594634]   SELECT tameident menunumber , TAMEDESC menudesc, AMEOBJET transactionName, null transCount FROM ADM_MENUS M, TRA_ADM_MENUS T, ADM_PROFILES P, ADM_USERS U      WHERE T.LANGUE = :LANG:       AND APRAPPLI= :APPLI:   AND T.TAMEAPPLI = AMEAPPLI           AND APRIDENT = AMEIDENT        AND T.TAMEIDENT = AMEIDENT        AND APRPROF = AUSPROF     AND AUSUSER = :USER:    AND APRACCES = 1    AND AMEAPPLI = APRAPPLI  AND APRAPPLI = AUSAPPLI    ORDER BY decode(ameparent,'', 0,ameseq)  
+02/08/17 13:33:05.DEBUG.124.LOGID[594634] Query parameters
+:LANG:			GB
+:APPLI:			V6MOBILETEST
+:USER:			gb
+:parent:		54001
+
+02/08/17 13:33:05.DEBUG.124.LOGID[594634] Retrieving 30 Object(s)...
+02/08/17 13:33:05.DEBUG.124.LOGID[594634] [SELECT] Temps d'execution (ms) : [761]
+02/08/17 13:33:05.DEBUG.124.LOGID[594634] </queryArray>
+02/08/17 13:33:55.DEBUG.119.LOGID[594635] Methode Java = clearTasksTakenBy
+02/08/17 13:33:55.DEBUG.119.LOGID[594635] Class Java = com.aldata.webservices.rest.TaskEngineWebService
+02/08/17 13:33:55.DEBUG.119.LOGID[594635] <executePLSQL>
+02/08/17 13:33:55.DEBUG.119.LOGID[594635] begin PKTask.clearTasksTakenBy(594635, ?, ?); end;
+02/08/17 13:33:55.DEBUG.119.LOGID[594635] register output : 2 4
+02/08/17 13:33:55.DEBUG.119.LOGID[594635] Output : 0
+02/08/17 13:33:55.DEBUG.119.LOGID[594635] </executePLSQL>
+02/08/17 13:34:02.DEBUG.119.LOGID[594636] Methode Java = getUserInformations
+02/08/17 13:34:02.DEBUG.119.LOGID[594636] Class Java = com.aldata.generic.login.GenericLoginWebService
+02/08/17 13:34:02.DEBUG.119.LOGID[594636] select TO_CHAR(CURRENT_DATE,'DD/MM/RR') from dual
+02/08/17 13:34:02.DEBUG.119.LOGID[594636] <queryArray>
+02/08/17 13:34:02.DEBUG.119.LOGID[594636] select TO_CHAR(CURRENT_DATE,'DD/MM/RR') from dual
+02/08/17 13:34:02.DEBUG.119.LOGID[594636] No parameters
+02/08/17 13:34:02.DEBUG.119.LOGID[594636] Retrieving 1 Object(s)...
+02/08/17 13:34:02.DEBUG.119.LOGID[594636] [SELECT] Temps d'execution (ms) : [232]
+02/08/17 13:34:02.DEBUG.119.LOGID[594636] </queryArray>
+02/08/17 13:34:02.DEBUG.119.LOGID[594636] <queryArray>
+02/08/17 13:34:02.DEBUG.119.LOGID[594636] select substr(LANJAVA, 1,2), substr(LANJAVA, 4,5) 
+from langues, adm_users t  
+where aususer = :USER: 
+and ausappli = :APPLI:  
+and langue = LANCODE 
+
+02/08/17 13:34:02.DEBUG.119.LOGID[594636] Query parameters
+:USER:			gb
+:APPLI:			V6MOBILETEST
+
+02/08/17 13:34:02.DEBUG.119.LOGID[594636] Retrieving 1 Object(s)...
+02/08/17 13:34:02.DEBUG.119.LOGID[594636] [SELECT] Temps d'execution (ms) : [179]
+02/08/17 13:34:02.DEBUG.119.LOGID[594636] </queryArray>
+02/08/17 13:34:02.DEBUG.119.LOGID[594636] select substr(LANJAVA, 1,2), substr(LANJAVA, 4,5) 
+from langues, adm_users t  
+where aususer = :USER: 
+and ausappli = :APPLI:  
+and langue = LANCODE 
+
+02/08/17 13:34:02.DEBUG.119.LOGID[594636] <queryArray>
+02/08/17 13:34:02.DEBUG.119.LOGID[594636] SELECT langue FROM adm_users WHERE aususer = :USER: AND ausappli = 'V6MOBILETEST' 
+02/08/17 13:34:02.DEBUG.119.LOGID[594636] Query parameters
+:USER:			gb
+
+02/08/17 13:34:02.DEBUG.119.LOGID[594636] Retrieving 1 Object(s)...
+02/08/17 13:34:02.DEBUG.119.LOGID[594636] [SELECT] Temps d'execution (ms) : [200]
+02/08/17 13:34:02.DEBUG.119.LOGID[594636] </queryArray>
+02/08/17 13:34:02.DEBUG.119.LOGID[594636] <queryArray>
+02/08/17 13:34:02.DEBUG.119.LOGID[594636] select 1 from user_tables where upper(table_name)='TB_VERSION'
+02/08/17 13:34:02.DEBUG.119.LOGID[594636] Query parameters
+
+02/08/17 13:34:02.DEBUG.119.LOGID[594636] Retrieving 0 Object(s)...
+02/08/17 13:34:02.DEBUG.119.LOGID[594636] [SELECT] Temps d'execution (ms) : [180]
+02/08/17 13:34:02.DEBUG.119.LOGID[594636] </queryArray>
+02/08/17 13:34:02.DEBUG.119.LOGID[594636] <queryArray>
+02/08/17 13:34:02.DEBUG.119.LOGID[594636] select verlabqa from (select verid, verlabqa, verdatqa from version where verlabqa like '%' order by verid desc) where rownum = 1
+02/08/17 13:34:02.DEBUG.119.LOGID[594636] Query parameters
+
+02/08/17 13:34:03.DEBUG.119.LOGID[594636] Retrieving 1 Object(s)...
+02/08/17 13:34:03.DEBUG.119.LOGID[594636] [SELECT] Temps d'execution (ms) : [183]
+02/08/17 13:34:03.DEBUG.119.LOGID[594636] </queryArray>
+02/08/17 13:34:03.DEBUG.119.LOGID[594636] <queryArray>
+02/08/17 13:34:03.DEBUG.119.LOGID[594636] SELECT langue FROM adm_users WHERE aususer = :USER: AND ausappli = 'V6MOBILETEST' 
+02/08/17 13:34:03.DEBUG.119.LOGID[594636] Query parameters
+:USER:			gb
+
+02/08/17 13:34:03.DEBUG.119.LOGID[594636] Retrieving 1 Object(s)...
+02/08/17 13:34:03.DEBUG.119.LOGID[594636] [SELECT] Temps d'execution (ms) : [178]
+02/08/17 13:34:03.DEBUG.119.LOGID[594636] </queryArray>
+02/08/17 13:34:03.DEBUG.119.LOGID[594636] select APCLASTUPDATE from ADM_PROFILESCACHE where APCAPPLI = :appli: and APCLANGUE = :lang: and APCID = 'LabelManager' and APCNEEDSUPDATE = 0
+02/08/17 13:34:03.DEBUG.119.LOGID[594636] <queryArray>
+02/08/17 13:34:03.DEBUG.119.LOGID[594636] select APCLASTUPDATE from ADM_PROFILESCACHE where APCAPPLI = :appli: and APCLANGUE = :lang: and APCID = 'LabelManager' and APCNEEDSUPDATE = 0
+02/08/17 13:34:03.DEBUG.119.LOGID[594636] Query parameters
+:appli:			V6MOBILETEST
+:lang:			GB
+
+02/08/17 13:34:03.DEBUG.119.LOGID[594636] Retrieving 1 Object(s)...
+02/08/17 13:34:03.DEBUG.119.LOGID[594636] [SELECT] Temps d'execution (ms) : [175]
+02/08/17 13:34:03.DEBUG.119.LOGID[594636] </queryArray>
+02/08/17 13:34:04.DEBUG.119.LOGID[594637] Methode Java = getUserSettings
+02/08/17 13:34:04.DEBUG.119.LOGID[594637] Class Java = com.aldata.generic.login.GenericLoginWebService
+02/08/17 13:34:04.DEBUG.119.LOGID[594637] <queryArray>
+02/08/17 13:34:04.DEBUG.119.LOGID[594637] select AUSETPARAMID, AUSETPARAMVAL from ADM_USERSETTINGS where AUSETUSER = :userName:  and AUSETAPPLI = :application:
+02/08/17 13:34:04.DEBUG.119.LOGID[594637] Query parameters
+:userName:		gb
+:application:		V6MOBILETEST
+
+02/08/17 13:34:04.DEBUG.119.LOGID[594637] Retrieving 11 Object(s)...
+02/08/17 13:34:04.DEBUG.119.LOGID[594637] [SELECT] Temps d'execution (ms) : [358]
+02/08/17 13:34:04.DEBUG.119.LOGID[594637] </queryArray>
+02/08/17 13:34:05.DEBUG.119.LOGID[594638] Methode Java = GWSMobileMenuInit
+02/08/17 13:34:05.DEBUG.119.LOGID[594638] Class Java = ois.webservices.gsm.common.WSMobileMenuInit
+02/08/17 13:34:05.DEBUG.119.LOGID[594638] <queryArray>
+02/08/17 13:34:05.DEBUG.119.LOGID[594638]   SELECT tameident menunumber , TAMEDESC menudesc, AMEOBJET transactionName, null transCount FROM ADM_MENUS M, TRA_ADM_MENUS T, ADM_PROFILES P, ADM_USERS U      WHERE T.LANGUE = :LANG:       AND APRAPPLI= :APPLI:   AND T.TAMEAPPLI = AMEAPPLI           AND APRIDENT = AMEIDENT        AND T.TAMEIDENT = AMEIDENT        AND APRPROF = AUSPROF     AND AUSUSER = :USER:    AND APRACCES = 1    AND AMEAPPLI = APRAPPLI  AND APRAPPLI = AUSAPPLI    ORDER BY decode(ameparent,'', 0,ameseq)  
+02/08/17 13:34:05.DEBUG.119.LOGID[594638] Query parameters
+:LANG:			GB
+:APPLI:			V6MOBILETEST
+:USER:			gb
+:parent:		54000
+
+02/08/17 13:34:06.DEBUG.119.LOGID[594638] Retrieving 30 Object(s)...
+02/08/17 13:34:06.DEBUG.119.LOGID[594638] [SELECT] Temps d'execution (ms) : [876]
+02/08/17 13:34:06.DEBUG.119.LOGID[594638] </queryArray>
+02/08/17 13:34:06.DEBUG.119.LOGID[594638] <queryArray>
+02/08/17 13:34:06.DEBUG.119.LOGID[594638]   SELECT tameident menunumber , TAMEDESC menudesc, AMEOBJET transactionName, null transCount FROM ADM_MENUS M, TRA_ADM_MENUS T, ADM_PROFILES P, ADM_USERS U      WHERE T.LANGUE = :LANG:       AND APRAPPLI= :APPLI:   AND T.TAMEAPPLI = AMEAPPLI           AND APRIDENT = AMEIDENT        AND T.TAMEIDENT = AMEIDENT        AND APRPROF = AUSPROF     AND AUSUSER = :USER:    AND APRACCES = 1    AND AMEAPPLI = APRAPPLI  AND APRAPPLI = AUSAPPLI    ORDER BY decode(ameparent,'', 0,ameseq)  
+02/08/17 13:34:06.DEBUG.119.LOGID[594638] Query parameters
+:LANG:			GB
+:APPLI:			V6MOBILETEST
+:USER:			gb
+:parent:		54001
+
+02/08/17 13:34:07.DEBUG.119.LOGID[594638] Retrieving 30 Object(s)...
+02/08/17 13:34:07.DEBUG.119.LOGID[594638] [SELECT] Temps d'execution (ms) : [979]
+02/08/17 13:34:07.DEBUG.119.LOGID[594638] </queryArray>
+02/08/17 13:35:04.DEBUG.127.LOGID[594639] Methode Java = clearTasksTakenBy
+02/08/17 13:35:04.DEBUG.127.LOGID[594639] Class Java = com.aldata.webservices.rest.TaskEngineWebService
+02/08/17 13:35:04.DEBUG.127.LOGID[594639] <executePLSQL>
+02/08/17 13:35:04.DEBUG.127.LOGID[594639] begin PKTask.clearTasksTakenBy(594639, ?, ?); end;
+02/08/17 13:35:04.DEBUG.127.LOGID[594639] register output : 2 4
+02/08/17 13:35:04.DEBUG.127.LOGID[594639] Output : 0
+02/08/17 13:35:04.DEBUG.127.LOGID[594639] </executePLSQL>
+02/08/17 13:35:14.DEBUG.120.LOGID[594640] Methode Java = getUserInformations
+02/08/17 13:35:14.DEBUG.120.LOGID[594640] Class Java = com.aldata.generic.login.GenericLoginWebService
+02/08/17 13:35:14.DEBUG.120.LOGID[594640] select TO_CHAR(CURRENT_DATE,'DD/MM/RR') from dual
+02/08/17 13:35:14.DEBUG.120.LOGID[594640] <queryArray>
+02/08/17 13:35:14.DEBUG.120.LOGID[594640] select TO_CHAR(CURRENT_DATE,'DD/MM/RR') from dual
+02/08/17 13:35:14.DEBUG.120.LOGID[594640] No parameters
+02/08/17 13:35:14.DEBUG.120.LOGID[594640] Retrieving 1 Object(s)...
+02/08/17 13:35:14.DEBUG.120.LOGID[594640] [SELECT] Temps d'execution (ms) : [202]
+02/08/17 13:35:14.DEBUG.120.LOGID[594640] </queryArray>
+02/08/17 13:35:14.DEBUG.120.LOGID[594640] <queryArray>
+02/08/17 13:35:14.DEBUG.120.LOGID[594640] select substr(LANJAVA, 1,2), substr(LANJAVA, 4,5) 
+from langues, adm_users t  
+where aususer = :USER: 
+and ausappli = :APPLI:  
+and langue = LANCODE 
+
+02/08/17 13:35:14.DEBUG.120.LOGID[594640] Query parameters
+:USER:			gb
+:APPLI:			V6MOBILETEST
+
+02/08/17 13:35:14.DEBUG.120.LOGID[594640] Retrieving 1 Object(s)...
+02/08/17 13:35:14.DEBUG.120.LOGID[594640] [SELECT] Temps d'execution (ms) : [188]
+02/08/17 13:35:14.DEBUG.120.LOGID[594640] </queryArray>
+02/08/17 13:35:14.DEBUG.120.LOGID[594640] select substr(LANJAVA, 1,2), substr(LANJAVA, 4,5) 
+from langues, adm_users t  
+where aususer = :USER: 
+and ausappli = :APPLI:  
+and langue = LANCODE 
+
+02/08/17 13:35:14.DEBUG.120.LOGID[594640] <queryArray>
+02/08/17 13:35:14.DEBUG.120.LOGID[594640] SELECT langue FROM adm_users WHERE aususer = :USER: AND ausappli = 'V6MOBILETEST' 
+02/08/17 13:35:14.DEBUG.120.LOGID[594640] Query parameters
+:USER:			gb
+
+02/08/17 13:35:14.DEBUG.120.LOGID[594640] Retrieving 1 Object(s)...
+02/08/17 13:35:14.DEBUG.120.LOGID[594640] [SELECT] Temps d'execution (ms) : [179]
+02/08/17 13:35:14.DEBUG.120.LOGID[594640] </queryArray>
+02/08/17 13:35:14.DEBUG.120.LOGID[594640] <queryArray>
+02/08/17 13:35:14.DEBUG.120.LOGID[594640] select 1 from user_tables where upper(table_name)='TB_VERSION'
+02/08/17 13:35:14.DEBUG.120.LOGID[594640] Query parameters
+
+02/08/17 13:35:15.DEBUG.120.LOGID[594640] Retrieving 0 Object(s)...
+02/08/17 13:35:15.DEBUG.120.LOGID[594640] [SELECT] Temps d'execution (ms) : [181]
+02/08/17 13:35:15.DEBUG.120.LOGID[594640] </queryArray>
+02/08/17 13:35:15.DEBUG.120.LOGID[594640] <queryArray>
+02/08/17 13:35:15.DEBUG.120.LOGID[594640] select verlabqa from (select verid, verlabqa, verdatqa from version where verlabqa like '%' order by verid desc) where rownum = 1
+02/08/17 13:35:15.DEBUG.120.LOGID[594640] Query parameters
+
+02/08/17 13:35:15.DEBUG.120.LOGID[594640] Retrieving 1 Object(s)...
+02/08/17 13:35:15.DEBUG.120.LOGID[594640] [SELECT] Temps d'execution (ms) : [181]
+02/08/17 13:35:15.DEBUG.120.LOGID[594640] </queryArray>
+02/08/17 13:35:15.DEBUG.120.LOGID[594640] <queryArray>
+02/08/17 13:35:15.DEBUG.120.LOGID[594640] SELECT langue FROM adm_users WHERE aususer = :USER: AND ausappli = 'V6MOBILETEST' 
+02/08/17 13:35:15.DEBUG.120.LOGID[594640] Query parameters
+:USER:			gb
+
+02/08/17 13:35:15.DEBUG.120.LOGID[594640] Retrieving 1 Object(s)...
+02/08/17 13:35:15.DEBUG.120.LOGID[594640] [SELECT] Temps d'execution (ms) : [179]
+02/08/17 13:35:15.DEBUG.120.LOGID[594640] </queryArray>
+02/08/17 13:35:15.DEBUG.120.LOGID[594640] select APCLASTUPDATE from ADM_PROFILESCACHE where APCAPPLI = :appli: and APCLANGUE = :lang: and APCID = 'LabelManager' and APCNEEDSUPDATE = 0
+02/08/17 13:35:15.DEBUG.120.LOGID[594640] <queryArray>
+02/08/17 13:35:15.DEBUG.120.LOGID[594640] select APCLASTUPDATE from ADM_PROFILESCACHE where APCAPPLI = :appli: and APCLANGUE = :lang: and APCID = 'LabelManager' and APCNEEDSUPDATE = 0
+02/08/17 13:35:15.DEBUG.120.LOGID[594640] Query parameters
+:appli:			V6MOBILETEST
+:lang:			GB
+
+02/08/17 13:35:15.DEBUG.120.LOGID[594640] Retrieving 1 Object(s)...
+02/08/17 13:35:15.DEBUG.120.LOGID[594640] [SELECT] Temps d'execution (ms) : [179]
+02/08/17 13:35:15.DEBUG.120.LOGID[594640] </queryArray>
+02/08/17 13:35:16.DEBUG.120.LOGID[594641] Methode Java = getUserSettings
+02/08/17 13:35:16.DEBUG.120.LOGID[594641] Class Java = com.aldata.generic.login.GenericLoginWebService
+02/08/17 13:35:16.DEBUG.120.LOGID[594641] <queryArray>
+02/08/17 13:35:16.DEBUG.120.LOGID[594641] select AUSETPARAMID, AUSETPARAMVAL from ADM_USERSETTINGS where AUSETUSER = :userName:  and AUSETAPPLI = :application:
+02/08/17 13:35:16.DEBUG.120.LOGID[594641] Query parameters
+:userName:		gb
+:application:		V6MOBILETEST
+
+02/08/17 13:35:16.DEBUG.120.LOGID[594641] Retrieving 11 Object(s)...
+02/08/17 13:35:16.DEBUG.120.LOGID[594641] [SELECT] Temps d'execution (ms) : [359]
+02/08/17 13:35:16.DEBUG.120.LOGID[594641] </queryArray>
+02/08/17 13:35:17.DEBUG.120.LOGID[594642] Methode Java = GWSMobileMenuInit
+02/08/17 13:35:17.DEBUG.120.LOGID[594642] Class Java = ois.webservices.gsm.common.WSMobileMenuInit
+02/08/17 13:35:17.DEBUG.120.LOGID[594642] <queryArray>
+02/08/17 13:35:17.DEBUG.120.LOGID[594642]   SELECT tameident menunumber , TAMEDESC menudesc, AMEOBJET transactionName, null transCount FROM ADM_MENUS M, TRA_ADM_MENUS T, ADM_PROFILES P, ADM_USERS U      WHERE T.LANGUE = :LANG:       AND APRAPPLI= :APPLI:   AND T.TAMEAPPLI = AMEAPPLI           AND APRIDENT = AMEIDENT        AND T.TAMEIDENT = AMEIDENT        AND APRPROF = AUSPROF     AND AUSUSER = :USER:    AND APRACCES = 1    AND AMEAPPLI = APRAPPLI  AND APRAPPLI = AUSAPPLI    ORDER BY decode(ameparent,'', 0,ameseq)  
+02/08/17 13:35:17.DEBUG.120.LOGID[594642] Query parameters
+:LANG:			GB
+:APPLI:			V6MOBILETEST
+:USER:			gb
+:parent:		54000
+
+02/08/17 13:35:17.DEBUG.120.LOGID[594642] Retrieving 30 Object(s)...
+02/08/17 13:35:17.DEBUG.120.LOGID[594642] [SELECT] Temps d'execution (ms) : [731]
+02/08/17 13:35:17.DEBUG.120.LOGID[594642] </queryArray>
+02/08/17 13:35:17.DEBUG.120.LOGID[594642] <queryArray>
+02/08/17 13:35:17.DEBUG.120.LOGID[594642]   SELECT tameident menunumber , TAMEDESC menudesc, AMEOBJET transactionName, null transCount FROM ADM_MENUS M, TRA_ADM_MENUS T, ADM_PROFILES P, ADM_USERS U      WHERE T.LANGUE = :LANG:       AND APRAPPLI= :APPLI:   AND T.TAMEAPPLI = AMEAPPLI           AND APRIDENT = AMEIDENT        AND T.TAMEIDENT = AMEIDENT        AND APRPROF = AUSPROF     AND AUSUSER = :USER:    AND APRACCES = 1    AND AMEAPPLI = APRAPPLI  AND APRAPPLI = AUSAPPLI    ORDER BY decode(ameparent,'', 0,ameseq)  
+02/08/17 13:35:17.DEBUG.120.LOGID[594642] Query parameters
+:LANG:			GB
+:APPLI:			V6MOBILETEST
+:USER:			gb
+:parent:		54001
+
+02/08/17 13:35:18.DEBUG.120.LOGID[594642] Retrieving 30 Object(s)...
+02/08/17 13:35:18.DEBUG.120.LOGID[594642] [SELECT] Temps d'execution (ms) : [731]
+02/08/17 13:35:18.DEBUG.120.LOGID[594642] </queryArray>
+02/08/17 13:35:22.DEBUG.118.LOGID[594643] Methode Java = getServerInfo
+02/08/17 13:35:22.DEBUG.118.LOGID[594643] Class Java = com.aldata.generic.login.GenericLoginWebService
+02/08/17 13:35:22.FATAL.118.LOGID[594643] ClassLoaderUtil
+02/08/17 13:35:22.FATAL.118.LOGID[594643] Exception during Process
+02/08/17 13:35:22.FATAL.118.LOGID[594643] NO_MARK : ClassLoaderUtil
+	at com.aldata.core.util.ClassLoaderUtil.getMethod(ClassLoaderUtil.java:42)
+	at com.aldata.core.util.ClassLoaderUtil.invokeWebServiceMethod(ClassLoaderUtil.java:94)
+	at com.aldata.webservices.configuration.WebServiceConfiguration.callWebMethod(WebServiceConfiguration.java:296)
+	at com.aldata.webservices.rest.RetailRestConnector.executeBusinessClasses(RetailRestConnector.java:551)
+	at com.aldata.webservices.rest.RetailRestConnector.postData(RetailRestConnector.java:404)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.apache.cxf.service.invoker.AbstractInvoker.performInvocation(AbstractInvoker.java:180)
+	at org.apache.cxf.service.invoker.AbstractInvoker.invoke(AbstractInvoker.java:96)
+	at org.apache.cxf.jaxrs.JAXRSInvoker.invoke(JAXRSInvoker.java:167)
+	at org.apache.cxf.jaxrs.JAXRSInvoker.invoke(JAXRSInvoker.java:94)
+	at org.apache.cxf.interceptor.ServiceInvokerInterceptor$1.run(ServiceInvokerInterceptor.java:58)
+	at org.apache.cxf.interceptor.ServiceInvokerInterceptor.handleMessage(ServiceInvokerInterceptor.java:94)
+	at org.apache.cxf.phase.PhaseInterceptorChain.doIntercept(PhaseInterceptorChain.java:262)
+	at org.apache.cxf.transport.ChainInitiationObserver.onMessage(ChainInitiationObserver.java:121)
+	at org.apache.cxf.transport.http.AbstractHTTPDestination.invoke(AbstractHTTPDestination.java:211)
+	at org.apache.cxf.transport.servlet.ServletController.invokeDestination(ServletController.java:213)
+	at org.apache.cxf.transport.servlet.ServletController.invoke(ServletController.java:154)
+	at org.apache.cxf.transport.servlet.CXFNonSpringServlet.invoke(CXFNonSpringServlet.java:130)
+	at org.apache.cxf.transport.servlet.AbstractHTTPServlet.handleRequest(AbstractHTTPServlet.java:221)
+	at org.apache.cxf.transport.servlet.AbstractHTTPServlet.doPost(AbstractHTTPServlet.java:141)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:647)
+	at org.apache.cxf.transport.servlet.AbstractHTTPServlet.service(AbstractHTTPServlet.java:197)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:311)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:116)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:83)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:113)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:101)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:113)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:54)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:45)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)
+	at com.aldata.authentication.GOLDAuthenticationFilter.doFilter(GOLDAuthenticationFilter.java:159)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:87)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:173)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:237)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:167)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.tomee.catalina.OpenEJBValve.invoke(OpenEJBValve.java:45)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:603)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:312)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:722)
+Caused by: com.aldata.common.bean.webservice.exception.ClassMapException: Unknow method
+	at com.aldata.core.util.ClassLoaderUtil.getMethod(ClassLoaderUtil.java:38)
+	... 67 more
+
+02/08/17 13:37:08.DEBUG.118.LOGID[594647] Methode Java = getServerInfo
+02/08/17 13:37:08.DEBUG.118.LOGID[594647] Class Java = com.aldata.generic.login.GenericLoginWebService
+02/08/17 13:38:23.DEBUG.157.LOGID[594651] Methode Java = GWSgetTestJSONData
+02/08/17 13:38:23.DEBUG.157.LOGID[594651] Class Java = ois.webservices.gsm.common.WSTests
+02/08/17 13:38:45.DEBUG.157.LOGID[594652] Methode Java = GWSTestJSONJSON
+02/08/17 13:38:45.DEBUG.157.LOGID[594652] Class Java = ois.webservices.gsm.common.WSTests
+02/08/17 13:38:45.FATAL.157.LOGID[594652] The output format of the business message is not XML
+02/08/17 13:38:45.FATAL.157.LOGID[594652] Exception during Process
+02/08/17 13:38:45.FATAL.157.LOGID[594652] RetailRestConnecter:CheckOutputFormat : The output format of the business message is not XML
+	at com.aldata.webservices.rest.RetailRestConnector.executeBusinessClasses(RetailRestConnector.java:615)
+	at com.aldata.webservices.rest.RetailRestConnector.postData(RetailRestConnector.java:408)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.apache.cxf.service.invoker.AbstractInvoker.performInvocation(AbstractInvoker.java:180)
+	at org.apache.cxf.service.invoker.AbstractInvoker.invoke(AbstractInvoker.java:96)
+	at org.apache.cxf.jaxrs.JAXRSInvoker.invoke(JAXRSInvoker.java:167)
+	at org.apache.cxf.jaxrs.JAXRSInvoker.invoke(JAXRSInvoker.java:94)
+	at org.apache.cxf.interceptor.ServiceInvokerInterceptor$1.run(ServiceInvokerInterceptor.java:58)
+	at org.apache.cxf.interceptor.ServiceInvokerInterceptor.handleMessage(ServiceInvokerInterceptor.java:94)
+	at org.apache.cxf.phase.PhaseInterceptorChain.doIntercept(PhaseInterceptorChain.java:262)
+	at org.apache.cxf.transport.ChainInitiationObserver.onMessage(ChainInitiationObserver.java:121)
+	at org.apache.cxf.transport.http.AbstractHTTPDestination.invoke(AbstractHTTPDestination.java:211)
+	at org.apache.cxf.transport.servlet.ServletController.invokeDestination(ServletController.java:213)
+	at org.apache.cxf.transport.servlet.ServletController.invoke(ServletController.java:154)
+	at org.apache.cxf.transport.servlet.CXFNonSpringServlet.invoke(CXFNonSpringServlet.java:130)
+	at org.apache.cxf.transport.servlet.AbstractHTTPServlet.handleRequest(AbstractHTTPServlet.java:221)
+	at org.apache.cxf.transport.servlet.AbstractHTTPServlet.doPost(AbstractHTTPServlet.java:141)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:647)
+	at org.apache.cxf.transport.servlet.AbstractHTTPServlet.service(AbstractHTTPServlet.java:197)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:311)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:116)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:83)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:113)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:101)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:113)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:54)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:45)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)
+	at com.aldata.authentication.GOLDAuthenticationFilter.doFilter(GOLDAuthenticationFilter.java:159)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:87)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:173)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:237)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:167)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.tomee.catalina.OpenEJBValve.invoke(OpenEJBValve.java:45)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:603)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:312)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:722)
+
+02/08/17 13:38:45.INFO.157.LOGID[594652] (SOAPEngine) SOAPMessageFactory= class com.sun.xml.internal.messaging.saaj.soap.ver1_1.SOAPMessageFactory1_1Impl
+02/08/17 13:38:45.INFO.157.LOGID[594652] (SOAPEngine) SOAPElementFactory= class com.sun.xml.internal.messaging.saaj.soap.ver1_1.SOAPFactory1_1Impl
+02/08/17 16:06:41.DEBUG.164.LOGID[594697] Methode Java = getServerInfo
+02/08/17 16:06:41.DEBUG.164.LOGID[594697] Class Java = com.aldata.generic.login.GenericLoginWebService
+02/08/17 16:25:55.DEBUG.163.LOGID[594700] Methode Java = getUserInformations
+02/08/17 16:25:55.DEBUG.163.LOGID[594700] Class Java = com.aldata.generic.login.GenericLoginWebService
+02/08/17 16:25:55.DEBUG.163.LOGID[594700] select TO_CHAR(CURRENT_DATE,'DD/MM/RR') from dual
+02/08/17 16:25:55.DEBUG.163.LOGID[594700] <queryArray>
+02/08/17 16:25:55.DEBUG.163.LOGID[594700] select TO_CHAR(CURRENT_DATE,'DD/MM/RR') from dual
+02/08/17 16:25:55.DEBUG.163.LOGID[594700] No parameters
+02/08/17 16:25:55.DEBUG.163.LOGID[594700] Retrieving 1 Object(s)...
+02/08/17 16:25:55.DEBUG.163.LOGID[594700] [SELECT] Temps d'execution (ms) : [187]
+02/08/17 16:25:55.DEBUG.163.LOGID[594700] </queryArray>
+02/08/17 16:25:55.DEBUG.163.LOGID[594700] <queryArray>
+02/08/17 16:25:55.DEBUG.163.LOGID[594700] select substr(LANJAVA, 1,2), substr(LANJAVA, 4,5) 
+from langues, adm_users t  
+where aususer = :USER: 
+and ausappli = :APPLI:  
+and langue = LANCODE 
+
+02/08/17 16:25:55.DEBUG.163.LOGID[594700] Query parameters
+:USER:			gb
+:APPLI:			V6MOBILETEST
+
+02/08/17 16:25:55.DEBUG.163.LOGID[594700] Retrieving 1 Object(s)...
+02/08/17 16:25:55.DEBUG.163.LOGID[594700] [SELECT] Temps d'execution (ms) : [172]
+02/08/17 16:25:55.DEBUG.163.LOGID[594700] </queryArray>
+02/08/17 16:25:55.DEBUG.163.LOGID[594700] select substr(LANJAVA, 1,2), substr(LANJAVA, 4,5) 
+from langues, adm_users t  
+where aususer = :USER: 
+and ausappli = :APPLI:  
+and langue = LANCODE 
+
+02/08/17 16:25:55.DEBUG.163.LOGID[594700] <queryArray>
+02/08/17 16:25:55.DEBUG.163.LOGID[594700] SELECT langue FROM adm_users WHERE aususer = :USER: AND ausappli = 'V6MOBILETEST' 
+02/08/17 16:25:55.DEBUG.163.LOGID[594700] Query parameters
+:USER:			gb
+
+02/08/17 16:25:55.DEBUG.163.LOGID[594700] Retrieving 1 Object(s)...
+02/08/17 16:25:55.DEBUG.163.LOGID[594700] [SELECT] Temps d'execution (ms) : [188]
+02/08/17 16:25:55.DEBUG.163.LOGID[594700] </queryArray>
+02/08/17 16:25:55.DEBUG.163.LOGID[594700] <queryArray>
+02/08/17 16:25:55.DEBUG.163.LOGID[594700] select 1 from user_tables where upper(table_name)='TB_VERSION'
+02/08/17 16:25:55.DEBUG.163.LOGID[594700] Query parameters
+
+02/08/17 16:25:56.DEBUG.163.LOGID[594700] Retrieving 0 Object(s)...
+02/08/17 16:25:56.DEBUG.163.LOGID[594700] [SELECT] Temps d'execution (ms) : [187]
+02/08/17 16:25:56.DEBUG.163.LOGID[594700] </queryArray>
+02/08/17 16:25:56.DEBUG.163.LOGID[594700] <queryArray>
+02/08/17 16:25:56.DEBUG.163.LOGID[594700] select verlabqa from (select verid, verlabqa, verdatqa from version where verlabqa like :patchInfo: order by verid desc) where rownum = 1
+02/08/17 16:25:56.DEBUG.163.LOGID[594700] Query parameters
+:patchInfo:		%
+
+02/08/17 16:25:56.DEBUG.163.LOGID[594700] Retrieving 1 Object(s)...
+02/08/17 16:25:56.DEBUG.163.LOGID[594700] [SELECT] Temps d'execution (ms) : [188]
+02/08/17 16:25:56.DEBUG.163.LOGID[594700] </queryArray>
+02/08/17 16:25:56.DEBUG.163.LOGID[594700] <queryArray>
+02/08/17 16:25:56.DEBUG.163.LOGID[594700] SELECT langue FROM adm_users WHERE aususer = :USER: AND ausappli = 'V6MOBILETEST' 
+02/08/17 16:25:56.DEBUG.163.LOGID[594700] Query parameters
+:USER:			gb
+
+02/08/17 16:25:56.DEBUG.163.LOGID[594700] Retrieving 1 Object(s)...
+02/08/17 16:25:56.DEBUG.163.LOGID[594700] [SELECT] Temps d'execution (ms) : [171]
+02/08/17 16:25:56.DEBUG.163.LOGID[594700] </queryArray>
+02/08/17 16:25:56.DEBUG.163.LOGID[594700] select APCLASTUPDATE from ADM_PROFILESCACHE where APCAPPLI = :appli: and APCLANGUE = :lang: and APCID = 'LabelManager' and APCNEEDSUPDATE = 0
+02/08/17 16:25:56.DEBUG.163.LOGID[594700] <queryArray>
+02/08/17 16:25:56.DEBUG.163.LOGID[594700] select APCLASTUPDATE from ADM_PROFILESCACHE where APCAPPLI = :appli: and APCLANGUE = :lang: and APCID = 'LabelManager' and APCNEEDSUPDATE = 0
+02/08/17 16:25:56.DEBUG.163.LOGID[594700] Query parameters
+:appli:			V6MOBILETEST
+:lang:			GB
+
+02/08/17 16:25:56.DEBUG.163.LOGID[594700] Retrieving 1 Object(s)...
+02/08/17 16:25:56.DEBUG.163.LOGID[594700] [SELECT] Temps d'execution (ms) : [187]
+02/08/17 16:25:56.DEBUG.163.LOGID[594700] </queryArray>
+02/08/17 16:25:57.DEBUG.163.LOGID[594701] Methode Java = getLabelsFromCache
+02/08/17 16:25:57.DEBUG.163.LOGID[594701] Class Java = com.aldata.generic.login.GenericLoginWebService
+02/08/17 16:25:57.DEBUG.163.LOGID[594701] <queryArray>
+02/08/17 16:25:57.DEBUG.163.LOGID[594701] select APCNEEDSUPDATE, APCLASTUPDATE, APCXML  from ADM_PROFILESCACHE  where APCAPPLI = :appli: and APCLANGUE = :lang:  and APCID = 'LabelManager' 
+02/08/17 16:25:57.DEBUG.163.LOGID[594701] Query parameters
+:appli:			V6MOBILETEST
+:lang:			GB
+
+02/08/17 16:25:57.DEBUG.163.LOGID[594701] Retrieving 1 Object(s)...
+02/08/17 16:25:57.DEBUG.163.LOGID[594701] [SELECT] Temps d'execution (ms) : [376]
+02/08/17 16:25:57.DEBUG.163.LOGID[594701] </queryArray>
+02/08/17 16:25:58.DEBUG.163.LOGID[594702] Methode Java = getUserSettings
+02/08/17 16:25:58.DEBUG.163.LOGID[594702] Class Java = com.aldata.generic.login.GenericLoginWebService
+02/08/17 16:25:58.DEBUG.163.LOGID[594702] <queryArray>
+02/08/17 16:25:58.DEBUG.163.LOGID[594702] select AUSETPARAMID, AUSETPARAMVAL from ADM_USERSETTINGS where AUSETUSER = :userName:  and AUSETAPPLI = :application:
+02/08/17 16:25:58.DEBUG.163.LOGID[594702] Query parameters
+:userName:		gb
+:application:		V6MOBILETEST
+
+02/08/17 16:25:59.DEBUG.163.LOGID[594702] Retrieving 11 Object(s)...
+02/08/17 16:25:59.DEBUG.163.LOGID[594702] [SELECT] Temps d'execution (ms) : [390]
+02/08/17 16:25:59.DEBUG.163.LOGID[594702] </queryArray>
+02/08/17 16:25:59.DEBUG.163.LOGID[594703] Methode Java = GWSMobileMenuInit
+02/08/17 16:25:59.DEBUG.163.LOGID[594703] Class Java = ois.webservices.gsm.common.WSMobileMenuInit
+02/08/17 16:25:59.DEBUG.163.LOGID[594703] <queryArray>
+02/08/17 16:25:59.DEBUG.163.LOGID[594703]   SELECT tameident menunumber , TAMEDESC menudesc, AMEOBJET transactionName, null transCount FROM ADM_MENUS M, TRA_ADM_MENUS T, ADM_PROFILES P, ADM_USERS U      WHERE T.LANGUE = :LANG:       AND APRAPPLI= :APPLI:   AND T.TAMEAPPLI = AMEAPPLI           AND APRIDENT = AMEIDENT        AND T.TAMEIDENT = AMEIDENT        AND APRPROF = AUSPROF     AND AUSUSER = :USER:    AND APRACCES = 1    AND AMEAPPLI = APRAPPLI  AND APRAPPLI = AUSAPPLI    ORDER BY decode(ameparent,'', 0,ameseq)  
+02/08/17 16:25:59.DEBUG.163.LOGID[594703] Query parameters
+:LANG:			GB
+:APPLI:			V6MOBILETEST
+:USER:			gb
+:parent:		54000
+
+02/08/17 16:26:00.DEBUG.163.LOGID[594703] Retrieving 30 Object(s)...
+02/08/17 16:26:00.DEBUG.163.LOGID[594703] [SELECT] Temps d'execution (ms) : [718]
+02/08/17 16:26:00.DEBUG.163.LOGID[594703] </queryArray>
+02/08/17 16:26:00.DEBUG.163.LOGID[594703] <queryArray>
+02/08/17 16:26:00.DEBUG.163.LOGID[594703]   SELECT tameident menunumber , TAMEDESC menudesc, AMEOBJET transactionName, null transCount FROM ADM_MENUS M, TRA_ADM_MENUS T, ADM_PROFILES P, ADM_USERS U      WHERE T.LANGUE = :LANG:       AND APRAPPLI= :APPLI:   AND T.TAMEAPPLI = AMEAPPLI           AND APRIDENT = AMEIDENT        AND T.TAMEIDENT = AMEIDENT        AND APRPROF = AUSPROF     AND AUSUSER = :USER:    AND APRACCES = 1    AND AMEAPPLI = APRAPPLI  AND APRAPPLI = AUSAPPLI    ORDER BY decode(ameparent,'', 0,ameseq)  
+02/08/17 16:26:00.DEBUG.163.LOGID[594703] Query parameters
+:LANG:			GB
+:APPLI:			V6MOBILETEST
+:USER:			gb
+:parent:		54001
+
+02/08/17 16:26:01.DEBUG.163.LOGID[594703] Retrieving 30 Object(s)...
+02/08/17 16:26:01.DEBUG.163.LOGID[594703] [SELECT] Temps d'execution (ms) : [889]
+02/08/17 16:26:01.DEBUG.163.LOGID[594703] </queryArray>
+02/08/17 16:26:09.DEBUG.158.LOGID[594704] Methode Java = getServerInfo
+02/08/17 16:26:09.DEBUG.158.LOGID[594704] Class Java = com.aldata.generic.login.GenericLoginWebService
+02/08/17 16:37:38.DEBUG.157.LOGID[594706] Methode Java = clearTasksTakenBy
+02/08/17 16:37:38.DEBUG.157.LOGID[594706] Class Java = com.aldata.webservices.rest.TaskEngineWebService
+02/08/17 16:37:38.DEBUG.157.LOGID[594706] <executePLSQL>
+02/08/17 16:37:38.DEBUG.157.LOGID[594706] begin PKTask.clearTasksTakenBy(594706, ?, ?); end;
+02/08/17 16:37:38.DEBUG.157.LOGID[594706] register output : 2 4
+02/08/17 16:37:38.DEBUG.157.LOGID[594706] Output : 0
+02/08/17 16:37:38.DEBUG.157.LOGID[594706] </executePLSQL>
+02/08/17 16:38:05.DEBUG.165.LOGID[594707] Methode Java = getUserInformations
+02/08/17 16:38:05.DEBUG.165.LOGID[594707] Class Java = com.aldata.generic.login.GenericLoginWebService
+02/08/17 16:38:05.DEBUG.165.LOGID[594707] select TO_CHAR(CURRENT_DATE,'DD/MM/RR') from dual
+02/08/17 16:38:05.DEBUG.165.LOGID[594707] <queryArray>
+02/08/17 16:38:05.DEBUG.165.LOGID[594707] select TO_CHAR(CURRENT_DATE,'DD/MM/RR') from dual
+02/08/17 16:38:05.DEBUG.165.LOGID[594707] No parameters
+02/08/17 16:38:05.DEBUG.165.LOGID[594707] Retrieving 1 Object(s)...
+02/08/17 16:38:05.DEBUG.165.LOGID[594707] [SELECT] Temps d'execution (ms) : [196]
+02/08/17 16:38:05.DEBUG.165.LOGID[594707] </queryArray>
+02/08/17 16:38:05.DEBUG.165.LOGID[594707] <queryArray>
+02/08/17 16:38:05.DEBUG.165.LOGID[594707] select substr(LANJAVA, 1,2), substr(LANJAVA, 4,5) 
+from langues, adm_users t  
+where aususer = :USER: 
+and ausappli = :APPLI:  
+and langue = LANCODE 
+
+02/08/17 16:38:05.DEBUG.165.LOGID[594707] Query parameters
+:USER:			gb
+:APPLI:			V6MOBILETEST
+
+02/08/17 16:38:05.DEBUG.165.LOGID[594707] Retrieving 1 Object(s)...
+02/08/17 16:38:05.DEBUG.165.LOGID[594707] [SELECT] Temps d'execution (ms) : [190]
+02/08/17 16:38:05.DEBUG.165.LOGID[594707] </queryArray>
+02/08/17 16:38:05.DEBUG.165.LOGID[594707] select substr(LANJAVA, 1,2), substr(LANJAVA, 4,5) 
+from langues, adm_users t  
+where aususer = :USER: 
+and ausappli = :APPLI:  
+and langue = LANCODE 
+
+02/08/17 16:38:05.DEBUG.165.LOGID[594707] <queryArray>
+02/08/17 16:38:05.DEBUG.165.LOGID[594707] SELECT langue FROM adm_users WHERE aususer = :USER: AND ausappli = 'V6MOBILETEST' 
+02/08/17 16:38:05.DEBUG.165.LOGID[594707] Query parameters
+:USER:			gb
+
+02/08/17 16:38:05.DEBUG.165.LOGID[594707] Retrieving 1 Object(s)...
+02/08/17 16:38:05.DEBUG.165.LOGID[594707] [SELECT] Temps d'execution (ms) : [195]
+02/08/17 16:38:05.DEBUG.165.LOGID[594707] </queryArray>
+02/08/17 16:38:05.DEBUG.165.LOGID[594707] <queryArray>
+02/08/17 16:38:05.DEBUG.165.LOGID[594707] select 1 from user_tables where upper(table_name)='TB_VERSION'
+02/08/17 16:38:05.DEBUG.165.LOGID[594707] Query parameters
+
+02/08/17 16:38:05.DEBUG.165.LOGID[594707] Retrieving 0 Object(s)...
+02/08/17 16:38:05.DEBUG.165.LOGID[594707] [SELECT] Temps d'execution (ms) : [175]
+02/08/17 16:38:05.DEBUG.165.LOGID[594707] </queryArray>
+02/08/17 16:38:05.DEBUG.165.LOGID[594707] <queryArray>
+02/08/17 16:38:05.DEBUG.165.LOGID[594707] select verlabqa from (select verid, verlabqa, verdatqa from version where verlabqa like :patchInfo: order by verid desc) where rownum = 1
+02/08/17 16:38:05.DEBUG.165.LOGID[594707] Query parameters
+:patchInfo:		%
+
+02/08/17 16:38:06.DEBUG.165.LOGID[594707] Retrieving 1 Object(s)...
+02/08/17 16:38:06.DEBUG.165.LOGID[594707] [SELECT] Temps d'execution (ms) : [196]
+02/08/17 16:38:06.DEBUG.165.LOGID[594707] </queryArray>
+02/08/17 16:38:06.DEBUG.165.LOGID[594707] <queryArray>
+02/08/17 16:38:06.DEBUG.165.LOGID[594707] SELECT langue FROM adm_users WHERE aususer = :USER: AND ausappli = 'V6MOBILETEST' 
+02/08/17 16:38:06.DEBUG.165.LOGID[594707] Query parameters
+:USER:			gb
+
+02/08/17 16:38:06.DEBUG.165.LOGID[594707] Retrieving 1 Object(s)...
+02/08/17 16:38:06.DEBUG.165.LOGID[594707] [SELECT] Temps d'execution (ms) : [173]
+02/08/17 16:38:06.DEBUG.165.LOGID[594707] </queryArray>
+02/08/17 16:38:06.DEBUG.165.LOGID[594707] select APCLASTUPDATE from ADM_PROFILESCACHE where APCAPPLI = :appli: and APCLANGUE = :lang: and APCID = 'LabelManager' and APCNEEDSUPDATE = 0
+02/08/17 16:38:06.DEBUG.165.LOGID[594707] <queryArray>
+02/08/17 16:38:06.DEBUG.165.LOGID[594707] select APCLASTUPDATE from ADM_PROFILESCACHE where APCAPPLI = :appli: and APCLANGUE = :lang: and APCID = 'LabelManager' and APCNEEDSUPDATE = 0
+02/08/17 16:38:06.DEBUG.165.LOGID[594707] Query parameters
+:appli:			V6MOBILETEST
+:lang:			GB
+
+02/08/17 16:38:06.DEBUG.165.LOGID[594707] Retrieving 1 Object(s)...
+02/08/17 16:38:06.DEBUG.165.LOGID[594707] [SELECT] Temps d'execution (ms) : [175]
+02/08/17 16:38:06.DEBUG.165.LOGID[594707] </queryArray>
+02/08/17 16:38:07.DEBUG.165.LOGID[594708] Methode Java = getUserSettings
+02/08/17 16:38:07.DEBUG.165.LOGID[594708] Class Java = com.aldata.generic.login.GenericLoginWebService
+02/08/17 16:38:07.DEBUG.165.LOGID[594708] <queryArray>
+02/08/17 16:38:07.DEBUG.165.LOGID[594708] select AUSETPARAMID, AUSETPARAMVAL from ADM_USERSETTINGS where AUSETUSER = :userName:  and AUSETAPPLI = :application:
+02/08/17 16:38:07.DEBUG.165.LOGID[594708] Query parameters
+:userName:		gb
+:application:		V6MOBILETEST
+
+02/08/17 16:38:07.DEBUG.165.LOGID[594708] Retrieving 11 Object(s)...
+02/08/17 16:38:07.DEBUG.165.LOGID[594708] [SELECT] Temps d'execution (ms) : [376]
+02/08/17 16:38:07.DEBUG.165.LOGID[594708] </queryArray>
+02/08/17 16:38:08.DEBUG.165.LOGID[594709] Methode Java = GWSMobileMenuInit
+02/08/17 16:38:08.DEBUG.165.LOGID[594709] Class Java = ois.webservices.gsm.common.WSMobileMenuInit
+02/08/17 16:38:08.DEBUG.165.LOGID[594709] <queryArray>
+02/08/17 16:38:08.DEBUG.165.LOGID[594709]   SELECT tameident menunumber , TAMEDESC menudesc, AMEOBJET transactionName, null transCount FROM ADM_MENUS M, TRA_ADM_MENUS T, ADM_PROFILES P, ADM_USERS U      WHERE T.LANGUE = :LANG:       AND APRAPPLI= :APPLI:   AND T.TAMEAPPLI = AMEAPPLI           AND APRIDENT = AMEIDENT        AND T.TAMEIDENT = AMEIDENT        AND APRPROF = AUSPROF     AND AUSUSER = :USER:    AND APRACCES = 1    AND AMEAPPLI = APRAPPLI  AND APRAPPLI = AUSAPPLI    ORDER BY decode(ameparent,'', 0,ameseq)  
+02/08/17 16:38:08.DEBUG.165.LOGID[594709] Query parameters
+:LANG:			GB
+:APPLI:			V6MOBILETEST
+:USER:			gb
+:parent:		54000
+
+02/08/17 16:38:09.DEBUG.165.LOGID[594709] Retrieving 30 Object(s)...
+02/08/17 16:38:09.DEBUG.165.LOGID[594709] [SELECT] Temps d'execution (ms) : [727]
+02/08/17 16:38:09.DEBUG.165.LOGID[594709] </queryArray>
+02/08/17 16:38:09.DEBUG.165.LOGID[594709] <queryArray>
+02/08/17 16:38:09.DEBUG.165.LOGID[594709]   SELECT tameident menunumber , TAMEDESC menudesc, AMEOBJET transactionName, null transCount FROM ADM_MENUS M, TRA_ADM_MENUS T, ADM_PROFILES P, ADM_USERS U      WHERE T.LANGUE = :LANG:       AND APRAPPLI= :APPLI:   AND T.TAMEAPPLI = AMEAPPLI           AND APRIDENT = AMEIDENT        AND T.TAMEIDENT = AMEIDENT        AND APRPROF = AUSPROF     AND AUSUSER = :USER:    AND APRACCES = 1    AND AMEAPPLI = APRAPPLI  AND APRAPPLI = AUSAPPLI    ORDER BY decode(ameparent,'', 0,ameseq)  
+02/08/17 16:38:09.DEBUG.165.LOGID[594709] Query parameters
+:LANG:			GB
+:APPLI:			V6MOBILETEST
+:USER:			gb
+:parent:		54001
+
+02/08/17 16:38:09.DEBUG.165.LOGID[594709] Retrieving 30 Object(s)...
+02/08/17 16:38:09.DEBUG.165.LOGID[594709] [SELECT] Temps d'execution (ms) : [709]
+02/08/17 16:38:09.DEBUG.165.LOGID[594709] </queryArray>
+02/08/17 16:38:13.DEBUG.158.LOGID[594710] Methode Java = getServerInfo
+02/08/17 16:38:13.DEBUG.158.LOGID[594710] Class Java = com.aldata.generic.login.GenericLoginWebService
+02/08/17 16:38:36.DEBUG.160.LOGID[594711] Methode Java = getServerInfo
+02/08/17 16:38:36.DEBUG.160.LOGID[594711] Class Java = com.aldata.generic.login.GenericLoginWebService
+02/08/17 16:43:01.DEBUG.112.LOGID[594712] Methode Java = clearTasksTakenBy
+02/08/17 16:43:01.DEBUG.112.LOGID[594712] Class Java = com.aldata.webservices.rest.TaskEngineWebService
+02/08/17 16:43:01.DEBUG.112.LOGID[594712] <executePLSQL>
+02/08/17 16:43:01.DEBUG.112.LOGID[594712] begin PKTask.clearTasksTakenBy(594712, ?, ?); end;
+02/08/17 16:43:01.DEBUG.112.LOGID[594712] register output : 2 4
+02/08/17 16:43:01.DEBUG.112.LOGID[594712] Output : 0
+02/08/17 16:43:01.DEBUG.112.LOGID[594712] </executePLSQL>
+02/08/17 16:43:08.INFO.118 (SOAPEngine) SOAPMessageFactory= class com.sun.xml.internal.messaging.saaj.soap.ver1_1.SOAPMessageFactory1_1Impl
+02/08/17 16:43:08.INFO.118 (SOAPEngine) SOAPElementFactory= class com.sun.xml.internal.messaging.saaj.soap.ver1_1.SOAPFactory1_1Impl
+02/08/17 16:43:08.DEBUG.118.LOGID[594713] Methode Java = getUserInformations
+02/08/17 16:43:08.DEBUG.118.LOGID[594713] Class Java = com.aldata.generic.login.GenericLoginWebService
+02/08/17 16:43:08.DEBUG.118.LOGID[594713] select TO_CHAR(CURRENT_DATE,'DD/MM/RR') from dual
+02/08/17 16:43:08.DEBUG.118.LOGID[594713] <queryArray>
+02/08/17 16:43:08.DEBUG.118.LOGID[594713] select TO_CHAR(CURRENT_DATE,'DD/MM/RR') from dual
+02/08/17 16:43:08.DEBUG.118.LOGID[594713] No parameters
+02/08/17 16:43:08.DEBUG.118.LOGID[594713] Retrieving 1 Object(s)...
+02/08/17 16:43:08.DEBUG.118.LOGID[594713] [SELECT] Temps d'execution (ms) : [187]
+02/08/17 16:43:08.DEBUG.118.LOGID[594713] </queryArray>
+02/08/17 16:43:08.DEBUG.118.LOGID[594713] <queryArray>
+02/08/17 16:43:08.DEBUG.118.LOGID[594713] select substr(LANJAVA, 1,2), substr(LANJAVA, 4,5) 
+from langues, adm_users t  
+where aususer = :USER: 
+and ausappli = :APPLI:  
+and langue = LANCODE 
+
+02/08/17 16:43:08.DEBUG.118.LOGID[594713] Query parameters
+:USER:			gb
+:APPLI:			V6MOBILETEST
+
+02/08/17 16:43:09.DEBUG.118.LOGID[594713] Retrieving 1 Object(s)...
+02/08/17 16:43:09.DEBUG.118.LOGID[594713] [SELECT] Temps d'execution (ms) : [186]
+02/08/17 16:43:09.DEBUG.118.LOGID[594713] </queryArray>
+02/08/17 16:43:09.DEBUG.118.LOGID[594713] select substr(LANJAVA, 1,2), substr(LANJAVA, 4,5) 
+from langues, adm_users t  
+where aususer = :USER: 
+and ausappli = :APPLI:  
+and langue = LANCODE 
+
+02/08/17 16:43:09.DEBUG.118.LOGID[594713] <queryArray>
+02/08/17 16:43:09.DEBUG.118.LOGID[594713] SELECT langue FROM adm_users WHERE aususer = :USER: AND ausappli = 'V6MOBILETEST' 
+02/08/17 16:43:09.DEBUG.118.LOGID[594713] Query parameters
+:USER:			gb
+
+02/08/17 16:43:09.DEBUG.118.LOGID[594713] Retrieving 1 Object(s)...
+02/08/17 16:43:09.DEBUG.118.LOGID[594713] [SELECT] Temps d'execution (ms) : [190]
+02/08/17 16:43:09.DEBUG.118.LOGID[594713] </queryArray>
+02/08/17 16:43:09.DEBUG.118.LOGID[594713] <queryArray>
+02/08/17 16:43:09.DEBUG.118.LOGID[594713] select 1 from user_tables where upper(table_name)='TB_VERSION'
+02/08/17 16:43:09.DEBUG.118.LOGID[594713] Query parameters
+
+02/08/17 16:43:09.DEBUG.118.LOGID[594713] Retrieving 0 Object(s)...
+02/08/17 16:43:09.DEBUG.118.LOGID[594713] [SELECT] Temps d'execution (ms) : [265]
+02/08/17 16:43:09.DEBUG.118.LOGID[594713] </queryArray>
+02/08/17 16:43:09.DEBUG.118.LOGID[594713] <queryArray>
+02/08/17 16:43:09.DEBUG.118.LOGID[594713] select verlabqa from (select verid, verlabqa, verdatqa from version where verlabqa like :patchInfo: order by verid desc) where rownum = 1
+02/08/17 16:43:09.DEBUG.118.LOGID[594713] Query parameters
+:patchInfo:		%
+
+02/08/17 16:43:09.DEBUG.118.LOGID[594713] Retrieving 1 Object(s)...
+02/08/17 16:43:09.DEBUG.118.LOGID[594713] [SELECT] Temps d'execution (ms) : [229]
+02/08/17 16:43:09.DEBUG.118.LOGID[594713] </queryArray>
+02/08/17 16:43:09.DEBUG.118.LOGID[594713] <queryArray>
+02/08/17 16:43:09.DEBUG.118.LOGID[594713] SELECT langue FROM adm_users WHERE aususer = :USER: AND ausappli = 'V6MOBILETEST' 
+02/08/17 16:43:09.DEBUG.118.LOGID[594713] Query parameters
+:USER:			gb
+
+02/08/17 16:43:10.DEBUG.118.LOGID[594713] Retrieving 1 Object(s)...
+02/08/17 16:43:10.DEBUG.118.LOGID[594713] [SELECT] Temps d'execution (ms) : [179]
+02/08/17 16:43:10.DEBUG.118.LOGID[594713] </queryArray>
+02/08/17 16:43:10.DEBUG.118.LOGID[594713] select APCLASTUPDATE from ADM_PROFILESCACHE where APCAPPLI = :appli: and APCLANGUE = :lang: and APCID = 'LabelManager' and APCNEEDSUPDATE = 0
+02/08/17 16:43:10.DEBUG.118.LOGID[594713] <queryArray>
+02/08/17 16:43:10.DEBUG.118.LOGID[594713] select APCLASTUPDATE from ADM_PROFILESCACHE where APCAPPLI = :appli: and APCLANGUE = :lang: and APCID = 'LabelManager' and APCNEEDSUPDATE = 0
+02/08/17 16:43:10.DEBUG.118.LOGID[594713] Query parameters
+:appli:			V6MOBILETEST
+:lang:			GB
+
+02/08/17 16:43:10.DEBUG.118.LOGID[594713] Retrieving 1 Object(s)...
+02/08/17 16:43:10.DEBUG.118.LOGID[594713] [SELECT] Temps d'execution (ms) : [189]
+02/08/17 16:43:10.DEBUG.118.LOGID[594713] </queryArray>
+02/08/17 16:43:10.DEBUG.118.LOGID[594714] Methode Java = getUserSettings
+02/08/17 16:43:10.DEBUG.118.LOGID[594714] Class Java = com.aldata.generic.login.GenericLoginWebService
+02/08/17 16:43:10.DEBUG.118.LOGID[594714] <queryArray>
+02/08/17 16:43:10.DEBUG.118.LOGID[594714] select AUSETPARAMID, AUSETPARAMVAL from ADM_USERSETTINGS where AUSETUSER = :userName:  and AUSETAPPLI = :application:
+02/08/17 16:43:10.DEBUG.118.LOGID[594714] Query parameters
+:userName:		gb
+:application:		V6MOBILETEST
+
+02/08/17 16:43:11.DEBUG.118.LOGID[594714] Retrieving 11 Object(s)...
+02/08/17 16:43:11.DEBUG.118.LOGID[594714] [SELECT] Temps d'execution (ms) : [344]
+02/08/17 16:43:11.DEBUG.118.LOGID[594714] </queryArray>
+02/08/17 16:43:11.DEBUG.118.LOGID[594715] Methode Java = GWSMobileMenuInit
+02/08/17 16:43:11.DEBUG.118.LOGID[594715] Class Java = ois.webservices.gsm.common.WSMobileMenuInit
+02/08/17 16:43:11.DEBUG.118.LOGID[594715] <queryArray>
+02/08/17 16:43:11.DEBUG.118.LOGID[594715]   SELECT tameident menunumber , TAMEDESC menudesc, AMEOBJET transactionName, null transCount FROM ADM_MENUS M, TRA_ADM_MENUS T, ADM_PROFILES P, ADM_USERS U      WHERE T.LANGUE = :LANG:       AND APRAPPLI= :APPLI:   AND T.TAMEAPPLI = AMEAPPLI           AND APRIDENT = AMEIDENT        AND T.TAMEIDENT = AMEIDENT        AND APRPROF = AUSPROF     AND AUSUSER = :USER:    AND APRACCES = 1    AND AMEAPPLI = APRAPPLI  AND APRAPPLI = AUSAPPLI    ORDER BY decode(ameparent,'', 0,ameseq)  
+02/08/17 16:43:11.DEBUG.118.LOGID[594715] Query parameters
+:LANG:			GB
+:APPLI:			V6MOBILETEST
+:USER:			gb
+:parent:		54000
+
+02/08/17 16:43:12.DEBUG.118.LOGID[594715] Retrieving 30 Object(s)...
+02/08/17 16:43:12.DEBUG.118.LOGID[594715] [SELECT] Temps d'execution (ms) : [739]
+02/08/17 16:43:12.DEBUG.118.LOGID[594715] </queryArray>
+02/08/17 16:43:12.DEBUG.118.LOGID[594715] <queryArray>
+02/08/17 16:43:12.DEBUG.118.LOGID[594715]   SELECT tameident menunumber , TAMEDESC menudesc, AMEOBJET transactionName, null transCount FROM ADM_MENUS M, TRA_ADM_MENUS T, ADM_PROFILES P, ADM_USERS U      WHERE T.LANGUE = :LANG:       AND APRAPPLI= :APPLI:   AND T.TAMEAPPLI = AMEAPPLI           AND APRIDENT = AMEIDENT        AND T.TAMEIDENT = AMEIDENT        AND APRPROF = AUSPROF     AND AUSUSER = :USER:    AND APRACCES = 1    AND AMEAPPLI = APRAPPLI  AND APRAPPLI = AUSAPPLI    ORDER BY decode(ameparent,'', 0,ameseq)  
+02/08/17 16:43:12.DEBUG.118.LOGID[594715] Query parameters
+:LANG:			GB
+:APPLI:			V6MOBILETEST
+:USER:			gb
+:parent:		54001
+
+02/08/17 16:43:13.DEBUG.118.LOGID[594715] Retrieving 30 Object(s)...
+02/08/17 16:43:13.DEBUG.118.LOGID[594715] [SELECT] Temps d'execution (ms) : [737]
+02/08/17 16:43:13.DEBUG.118.LOGID[594715] </queryArray>
+02/08/17 16:44:22.DEBUG.115.LOGID[594716] Methode Java = getServerInfo
+02/08/17 16:44:22.DEBUG.115.LOGID[594716] Class Java = com.aldata.generic.login.GenericLoginWebService
+02/08/17 16:44:38.DEBUG.115.LOGID[594717] Methode Java = getServerInfo
+02/08/17 16:44:38.DEBUG.115.LOGID[594717] Class Java = com.aldata.generic.login.GenericLoginWebService
+02/08/17 16:44:53.DEBUG.116.LOGID[594718] Methode Java = getServerInfo
+02/08/17 16:44:53.DEBUG.116.LOGID[594718] Class Java = com.aldata.generic.login.GenericLoginWebService
+02/08/17 16:46:39.DEBUG.120.LOGID[594719] Methode Java = clearTasksTakenBy
+02/08/17 16:46:39.DEBUG.120.LOGID[594719] Class Java = com.aldata.webservices.rest.TaskEngineWebService
+02/08/17 16:46:39.DEBUG.120.LOGID[594719] <executePLSQL>
+02/08/17 16:46:39.DEBUG.120.LOGID[594719] begin PKTask.clearTasksTakenBy(594719, ?, ?); end;
+02/08/17 16:46:39.DEBUG.120.LOGID[594719] register output : 2 4
+02/08/17 16:46:39.DEBUG.120.LOGID[594719] Output : 0
+02/08/17 16:46:39.DEBUG.120.LOGID[594719] </executePLSQL>
+02/08/17 17:46:07.DEBUG.119.LOGID[594745] Methode Java = getUserInformations
+02/08/17 17:46:07.DEBUG.119.LOGID[594745] Class Java = com.aldata.generic.login.GenericLoginWebService
+02/08/17 17:46:07.DEBUG.119.LOGID[594745] select TO_CHAR(CURRENT_DATE,'DD/MM/RR') from dual
+02/08/17 17:46:07.DEBUG.119.LOGID[594745] <queryArray>
+02/08/17 17:46:07.DEBUG.119.LOGID[594745] select TO_CHAR(CURRENT_DATE,'DD/MM/RR') from dual
+02/08/17 17:46:07.DEBUG.119.LOGID[594745] No parameters
+02/08/17 17:46:08.DEBUG.119.LOGID[594745] Retrieving 1 Object(s)...
+02/08/17 17:46:08.DEBUG.119.LOGID[594745] [SELECT] Temps d'execution (ms) : [274]
+02/08/17 17:46:08.DEBUG.119.LOGID[594745] </queryArray>
+02/08/17 17:46:08.DEBUG.119.LOGID[594745] <queryArray>
+02/08/17 17:46:08.DEBUG.119.LOGID[594745] select substr(LANJAVA, 1,2), substr(LANJAVA, 4,5) 
+from langues, adm_users t  
+where aususer = :USER: 
+and ausappli = :APPLI:  
+and langue = LANCODE 
+
+02/08/17 17:46:08.DEBUG.119.LOGID[594745] Query parameters
+:USER:			gb
+:APPLI:			V6MOBILETEST
+
+02/08/17 17:46:08.DEBUG.119.LOGID[594745] Retrieving 1 Object(s)...
+02/08/17 17:46:08.DEBUG.119.LOGID[594745] [SELECT] Temps d'execution (ms) : [189]
+02/08/17 17:46:08.DEBUG.119.LOGID[594745] </queryArray>
+02/08/17 17:46:08.DEBUG.119.LOGID[594745] select substr(LANJAVA, 1,2), substr(LANJAVA, 4,5) 
+from langues, adm_users t  
+where aususer = :USER: 
+and ausappli = :APPLI:  
+and langue = LANCODE 
+
+02/08/17 17:46:08.DEBUG.119.LOGID[594745] <queryArray>
+02/08/17 17:46:08.DEBUG.119.LOGID[594745] SELECT langue FROM adm_users WHERE aususer = :USER: AND ausappli = 'V6MOBILETEST' 
+02/08/17 17:46:08.DEBUG.119.LOGID[594745] Query parameters
+:USER:			gb
+
+02/08/17 17:46:08.DEBUG.119.LOGID[594745] Retrieving 1 Object(s)...
+02/08/17 17:46:08.DEBUG.119.LOGID[594745] [SELECT] Temps d'execution (ms) : [184]
+02/08/17 17:46:08.DEBUG.119.LOGID[594745] </queryArray>
+02/08/17 17:46:08.DEBUG.119.LOGID[594745] <queryArray>
+02/08/17 17:46:08.DEBUG.119.LOGID[594745] select 1 from user_tables where upper(table_name)='TB_VERSION'
+02/08/17 17:46:08.DEBUG.119.LOGID[594745] Query parameters
+
+02/08/17 17:46:08.DEBUG.119.LOGID[594745] Retrieving 0 Object(s)...
+02/08/17 17:46:08.DEBUG.119.LOGID[594745] [SELECT] Temps d'execution (ms) : [188]
+02/08/17 17:46:08.DEBUG.119.LOGID[594745] </queryArray>
+02/08/17 17:46:08.DEBUG.119.LOGID[594745] <queryArray>
+02/08/17 17:46:08.DEBUG.119.LOGID[594745] select verlabqa from (select verid, verlabqa, verdatqa from version where verlabqa like :patchInfo: order by verid desc) where rownum = 1
+02/08/17 17:46:08.DEBUG.119.LOGID[594745] Query parameters
+:patchInfo:		%
+
+02/08/17 17:46:08.DEBUG.119.LOGID[594745] Retrieving 1 Object(s)...
+02/08/17 17:46:08.DEBUG.119.LOGID[594745] [SELECT] Temps d'execution (ms) : [201]
+02/08/17 17:46:08.DEBUG.119.LOGID[594745] </queryArray>
+02/08/17 17:46:08.DEBUG.119.LOGID[594745] <queryArray>
+02/08/17 17:46:08.DEBUG.119.LOGID[594745] SELECT langue FROM adm_users WHERE aususer = :USER: AND ausappli = 'V6MOBILETEST' 
+02/08/17 17:46:08.DEBUG.119.LOGID[594745] Query parameters
+:USER:			gb
+
+02/08/17 17:46:09.DEBUG.119.LOGID[594745] Retrieving 1 Object(s)...
+02/08/17 17:46:09.DEBUG.119.LOGID[594745] [SELECT] Temps d'execution (ms) : [220]
+02/08/17 17:46:09.DEBUG.119.LOGID[594745] </queryArray>
+02/08/17 17:46:09.DEBUG.119.LOGID[594745] select APCLASTUPDATE from ADM_PROFILESCACHE where APCAPPLI = :appli: and APCLANGUE = :lang: and APCID = 'LabelManager' and APCNEEDSUPDATE = 0
+02/08/17 17:46:09.DEBUG.119.LOGID[594745] <queryArray>
+02/08/17 17:46:09.DEBUG.119.LOGID[594745] select APCLASTUPDATE from ADM_PROFILESCACHE where APCAPPLI = :appli: and APCLANGUE = :lang: and APCID = 'LabelManager' and APCNEEDSUPDATE = 0
+02/08/17 17:46:09.DEBUG.119.LOGID[594745] Query parameters
+:appli:			V6MOBILETEST
+:lang:			GB
+
+02/08/17 17:46:09.DEBUG.119.LOGID[594745] Retrieving 1 Object(s)...
+02/08/17 17:46:09.DEBUG.119.LOGID[594745] [SELECT] Temps d'execution (ms) : [188]
+02/08/17 17:46:09.DEBUG.119.LOGID[594745] </queryArray>
+02/08/17 17:46:09.DEBUG.119.LOGID[594746] Methode Java = getUserSettings
+02/08/17 17:46:09.DEBUG.119.LOGID[594746] Class Java = com.aldata.generic.login.GenericLoginWebService
+02/08/17 17:46:09.DEBUG.119.LOGID[594746] <queryArray>
+02/08/17 17:46:09.DEBUG.119.LOGID[594746] select AUSETPARAMID, AUSETPARAMVAL from ADM_USERSETTINGS where AUSETUSER = :userName:  and AUSETAPPLI = :application:
+02/08/17 17:46:09.DEBUG.119.LOGID[594746] Query parameters
+:userName:		gb
+:application:		V6MOBILETEST
+
+02/08/17 17:46:10.DEBUG.119.LOGID[594746] Retrieving 11 Object(s)...
+02/08/17 17:46:10.DEBUG.119.LOGID[594746] [SELECT] Temps d'execution (ms) : [471]
+02/08/17 17:46:10.DEBUG.119.LOGID[594746] </queryArray>
+02/08/17 17:46:11.DEBUG.119.LOGID[594747] Methode Java = GWSMobileMenuInit
+02/08/17 17:46:11.DEBUG.119.LOGID[594747] Class Java = ois.webservices.gsm.common.WSMobileMenuInit
+02/08/17 17:46:11.DEBUG.119.LOGID[594747] <queryArray>
+02/08/17 17:46:11.DEBUG.119.LOGID[594747]   SELECT tameident menunumber , TAMEDESC menudesc, AMEOBJET transactionName, null transCount FROM ADM_MENUS M, TRA_ADM_MENUS T, ADM_PROFILES P, ADM_USERS U      WHERE T.LANGUE = :LANG:       AND APRAPPLI= :APPLI:   AND T.TAMEAPPLI = AMEAPPLI           AND APRIDENT = AMEIDENT        AND T.TAMEIDENT = AMEIDENT        AND APRPROF = AUSPROF     AND AUSUSER = :USER:    AND APRACCES = 1    AND AMEAPPLI = APRAPPLI  AND APRAPPLI = AUSAPPLI    ORDER BY decode(ameparent,'', 0,ameseq)  
+02/08/17 17:46:11.DEBUG.119.LOGID[594747] Query parameters
+:LANG:			GB
+:APPLI:			V6MOBILETEST
+:USER:			gb
+:parent:		54000
+
+02/08/17 17:46:11.DEBUG.119.LOGID[594747] Retrieving 30 Object(s)...
+02/08/17 17:46:11.DEBUG.119.LOGID[594747] [SELECT] Temps d'execution (ms) : [758]
+02/08/17 17:46:11.DEBUG.119.LOGID[594747] </queryArray>
+02/08/17 17:46:11.DEBUG.119.LOGID[594747] <queryArray>
+02/08/17 17:46:11.DEBUG.119.LOGID[594747]   SELECT tameident menunumber , TAMEDESC menudesc, AMEOBJET transactionName, null transCount FROM ADM_MENUS M, TRA_ADM_MENUS T, ADM_PROFILES P, ADM_USERS U      WHERE T.LANGUE = :LANG:       AND APRAPPLI= :APPLI:   AND T.TAMEAPPLI = AMEAPPLI           AND APRIDENT = AMEIDENT        AND T.TAMEIDENT = AMEIDENT        AND APRPROF = AUSPROF     AND AUSUSER = :USER:    AND APRACCES = 1    AND AMEAPPLI = APRAPPLI  AND APRAPPLI = AUSAPPLI    ORDER BY decode(ameparent,'', 0,ameseq)  
+02/08/17 17:46:11.DEBUG.119.LOGID[594747] Query parameters
+:LANG:			GB
+:APPLI:			V6MOBILETEST
+:USER:			gb
+:parent:		54001
+
+02/08/17 17:46:12.DEBUG.119.LOGID[594747] Retrieving 30 Object(s)...
+02/08/17 17:46:12.DEBUG.119.LOGID[594747] [SELECT] Temps d'execution (ms) : [773]
+02/08/17 17:46:12.DEBUG.119.LOGID[594747] </queryArray>
+02/08/17 17:46:33.DEBUG.116.LOGID[594748] Methode Java = GWSTestJSONJSON
+02/08/17 17:46:33.DEBUG.116.LOGID[594748] Class Java = ois.webservices.gsm.common.WSTests
+02/08/17 17:46:33.FATAL.116.LOGID[594748] The output format of the business message is not XML
+02/08/17 17:46:33.FATAL.116.LOGID[594748] Exception during Process
+02/08/17 17:46:33.FATAL.116.LOGID[594748] RetailRestConnecter:CheckOutputFormat : The output format of the business message is not XML
+	at com.aldata.webservices.rest.RetailRestConnector.executeBusinessClasses(RetailRestConnector.java:615)
+	at com.aldata.webservices.rest.RetailRestConnector.postData(RetailRestConnector.java:408)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.apache.cxf.service.invoker.AbstractInvoker.performInvocation(AbstractInvoker.java:180)
+	at org.apache.cxf.service.invoker.AbstractInvoker.invoke(AbstractInvoker.java:96)
+	at org.apache.cxf.jaxrs.JAXRSInvoker.invoke(JAXRSInvoker.java:167)
+	at org.apache.cxf.jaxrs.JAXRSInvoker.invoke(JAXRSInvoker.java:94)
+	at org.apache.cxf.interceptor.ServiceInvokerInterceptor$1.run(ServiceInvokerInterceptor.java:58)
+	at org.apache.cxf.interceptor.ServiceInvokerInterceptor.handleMessage(ServiceInvokerInterceptor.java:94)
+	at org.apache.cxf.phase.PhaseInterceptorChain.doIntercept(PhaseInterceptorChain.java:262)
+	at org.apache.cxf.transport.ChainInitiationObserver.onMessage(ChainInitiationObserver.java:121)
+	at org.apache.cxf.transport.http.AbstractHTTPDestination.invoke(AbstractHTTPDestination.java:211)
+	at org.apache.cxf.transport.servlet.ServletController.invokeDestination(ServletController.java:213)
+	at org.apache.cxf.transport.servlet.ServletController.invoke(ServletController.java:154)
+	at org.apache.cxf.transport.servlet.CXFNonSpringServlet.invoke(CXFNonSpringServlet.java:130)
+	at org.apache.cxf.transport.servlet.AbstractHTTPServlet.handleRequest(AbstractHTTPServlet.java:221)
+	at org.apache.cxf.transport.servlet.AbstractHTTPServlet.doPost(AbstractHTTPServlet.java:141)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:647)
+	at org.apache.cxf.transport.servlet.AbstractHTTPServlet.service(AbstractHTTPServlet.java:197)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:311)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:116)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:83)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:113)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:101)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:113)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:54)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:45)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)
+	at com.aldata.authentication.GOLDAuthenticationFilter.doFilter(GOLDAuthenticationFilter.java:159)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:87)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:173)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:237)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:167)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.tomee.catalina.OpenEJBValve.invoke(OpenEJBValve.java:45)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:603)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:310)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:722)
+
+02/08/17 17:54:26.DEBUG.120.LOGID[594759] Methode Java = GWSTestJSONJSON
+02/08/17 17:54:26.DEBUG.120.LOGID[594759] Class Java = ois.webservices.gsm.common.WSTests
+02/08/17 17:54:27.FATAL.120.LOGID[594759] Request does not contain JSON
+02/08/17 17:54:27.FATAL.120.LOGID[594759] Exception during Process
+02/08/17 17:54:27.FATAL.120.LOGID[594759] com.aldata.common.bean.webservice.exception.BusinessException: Request does not contain JSON
+	at ois.webservices.gsm.common.WSTests.GWSTestJSONJSON(WSTests.java:221)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at com.aldata.core.util.ClassLoaderUtil.invokeWebServiceMethod(ClassLoaderUtil.java:100)
+	at com.aldata.webservices.configuration.WebServiceConfiguration.callWebMethod(WebServiceConfiguration.java:296)
+	at com.aldata.webservices.rest.RetailRestConnector.executeBusinessClasses(RetailRestConnector.java:610)
+	at com.aldata.webservices.rest.RetailRestConnector.postData(RetailRestConnector.java:408)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.apache.cxf.service.invoker.AbstractInvoker.performInvocation(AbstractInvoker.java:180)
+	at org.apache.cxf.service.invoker.AbstractInvoker.invoke(AbstractInvoker.java:96)
+	at org.apache.cxf.jaxrs.JAXRSInvoker.invoke(JAXRSInvoker.java:167)
+	at org.apache.cxf.jaxrs.JAXRSInvoker.invoke(JAXRSInvoker.java:94)
+	at org.apache.cxf.interceptor.ServiceInvokerInterceptor$1.run(ServiceInvokerInterceptor.java:58)
+	at org.apache.cxf.interceptor.ServiceInvokerInterceptor.handleMessage(ServiceInvokerInterceptor.java:94)
+	at org.apache.cxf.phase.PhaseInterceptorChain.doIntercept(PhaseInterceptorChain.java:262)
+	at org.apache.cxf.transport.ChainInitiationObserver.onMessage(ChainInitiationObserver.java:121)
+	at org.apache.cxf.transport.http.AbstractHTTPDestination.invoke(AbstractHTTPDestination.java:211)
+	at org.apache.cxf.transport.servlet.ServletController.invokeDestination(ServletController.java:213)
+	at org.apache.cxf.transport.servlet.ServletController.invoke(ServletController.java:154)
+	at org.apache.cxf.transport.servlet.CXFNonSpringServlet.invoke(CXFNonSpringServlet.java:130)
+	at org.apache.cxf.transport.servlet.AbstractHTTPServlet.handleRequest(AbstractHTTPServlet.java:221)
+	at org.apache.cxf.transport.servlet.AbstractHTTPServlet.doPost(AbstractHTTPServlet.java:141)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:647)
+	at org.apache.cxf.transport.servlet.AbstractHTTPServlet.service(AbstractHTTPServlet.java:197)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:311)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:116)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:83)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:113)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:101)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:113)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:54)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:45)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)
+	at com.aldata.authentication.GOLDAuthenticationFilter.doFilter(GOLDAuthenticationFilter.java:159)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:87)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:173)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:237)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:167)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.tomee.catalina.OpenEJBValve.invoke(OpenEJBValve.java:45)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:603)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:310)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:722)
+
+02/08/17 17:54:27.FATAL.120.LOGID[594759] null
+02/08/17 17:54:27.FATAL.120.LOGID[594759] Exception during Process
+02/08/17 17:54:27.FATAL.120.LOGID[594759] java.lang.NullPointerException
+	at com.aldata.webservices.rest.RetailRestConnector.manageActivity(RetailRestConnector.java:260)
+	at com.aldata.webservices.rest.RetailRestConnector.manageErrorJSON(RetailRestConnector.java:933)
+	at com.aldata.webservices.rest.RetailRestConnector.executeBusinessClasses(RetailRestConnector.java:683)
+	at com.aldata.webservices.rest.RetailRestConnector.postData(RetailRestConnector.java:408)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.apache.cxf.service.invoker.AbstractInvoker.performInvocation(AbstractInvoker.java:180)
+	at org.apache.cxf.service.invoker.AbstractInvoker.invoke(AbstractInvoker.java:96)
+	at org.apache.cxf.jaxrs.JAXRSInvoker.invoke(JAXRSInvoker.java:167)
+	at org.apache.cxf.jaxrs.JAXRSInvoker.invoke(JAXRSInvoker.java:94)
+	at org.apache.cxf.interceptor.ServiceInvokerInterceptor$1.run(ServiceInvokerInterceptor.java:58)
+	at org.apache.cxf.interceptor.ServiceInvokerInterceptor.handleMessage(ServiceInvokerInterceptor.java:94)
+	at org.apache.cxf.phase.PhaseInterceptorChain.doIntercept(PhaseInterceptorChain.java:262)
+	at org.apache.cxf.transport.ChainInitiationObserver.onMessage(ChainInitiationObserver.java:121)
+	at org.apache.cxf.transport.http.AbstractHTTPDestination.invoke(AbstractHTTPDestination.java:211)
+	at org.apache.cxf.transport.servlet.ServletController.invokeDestination(ServletController.java:213)
+	at org.apache.cxf.transport.servlet.ServletController.invoke(ServletController.java:154)
+	at org.apache.cxf.transport.servlet.CXFNonSpringServlet.invoke(CXFNonSpringServlet.java:130)
+	at org.apache.cxf.transport.servlet.AbstractHTTPServlet.handleRequest(AbstractHTTPServlet.java:221)
+	at org.apache.cxf.transport.servlet.AbstractHTTPServlet.doPost(AbstractHTTPServlet.java:141)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:647)
+	at org.apache.cxf.transport.servlet.AbstractHTTPServlet.service(AbstractHTTPServlet.java:197)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:311)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:116)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:83)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:113)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:101)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:113)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:54)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:45)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)
+	at com.aldata.authentication.GOLDAuthenticationFilter.doFilter(GOLDAuthenticationFilter.java:159)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:87)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:173)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:237)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:167)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.tomee.catalina.OpenEJBValve.invoke(OpenEJBValve.java:45)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:603)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:310)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:722)
+
+02/08/17 17:54:50.DEBUG.113.LOGID[594760] Methode Java = clearTasksTakenBy
+02/08/17 17:54:50.DEBUG.113.LOGID[594760] Class Java = com.aldata.webservices.rest.TaskEngineWebService
+02/08/17 17:54:50.DEBUG.113.LOGID[594760] <executePLSQL>
+02/08/17 17:54:50.DEBUG.113.LOGID[594760] begin PKTask.clearTasksTakenBy(594760, ?, ?); end;
+02/08/17 17:54:50.DEBUG.113.LOGID[594760] register output : 2 4
+02/08/17 17:54:50.DEBUG.113.LOGID[594760] Output : 0
+02/08/17 17:54:50.DEBUG.113.LOGID[594760] </executePLSQL>
+02/08/17 17:55:04.DEBUG.116.LOGID[594761] Methode Java = GWSTestJSONJSON
+02/08/17 17:55:04.DEBUG.116.LOGID[594761] Class Java = ois.webservices.gsm.common.WSTests
+02/08/17 17:55:04.FATAL.116.LOGID[594761] Request does not contain JSON
+02/08/17 17:55:04.FATAL.116.LOGID[594761] Exception during Process
+02/08/17 17:55:04.FATAL.116.LOGID[594761] com.aldata.common.bean.webservice.exception.BusinessException: Request does not contain JSON
+	at ois.webservices.gsm.common.WSTests.GWSTestJSONJSON(WSTests.java:221)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at com.aldata.core.util.ClassLoaderUtil.invokeWebServiceMethod(ClassLoaderUtil.java:100)
+	at com.aldata.webservices.configuration.WebServiceConfiguration.callWebMethod(WebServiceConfiguration.java:296)
+	at com.aldata.webservices.rest.RetailRestConnector.executeBusinessClasses(RetailRestConnector.java:610)
+	at com.aldata.webservices.rest.RetailRestConnector.postData(RetailRestConnector.java:408)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.apache.cxf.service.invoker.AbstractInvoker.performInvocation(AbstractInvoker.java:180)
+	at org.apache.cxf.service.invoker.AbstractInvoker.invoke(AbstractInvoker.java:96)
+	at org.apache.cxf.jaxrs.JAXRSInvoker.invoke(JAXRSInvoker.java:167)
+	at org.apache.cxf.jaxrs.JAXRSInvoker.invoke(JAXRSInvoker.java:94)
+	at org.apache.cxf.interceptor.ServiceInvokerInterceptor$1.run(ServiceInvokerInterceptor.java:58)
+	at org.apache.cxf.interceptor.ServiceInvokerInterceptor.handleMessage(ServiceInvokerInterceptor.java:94)
+	at org.apache.cxf.phase.PhaseInterceptorChain.doIntercept(PhaseInterceptorChain.java:262)
+	at org.apache.cxf.transport.ChainInitiationObserver.onMessage(ChainInitiationObserver.java:121)
+	at org.apache.cxf.transport.http.AbstractHTTPDestination.invoke(AbstractHTTPDestination.java:211)
+	at org.apache.cxf.transport.servlet.ServletController.invokeDestination(ServletController.java:213)
+	at org.apache.cxf.transport.servlet.ServletController.invoke(ServletController.java:154)
+	at org.apache.cxf.transport.servlet.CXFNonSpringServlet.invoke(CXFNonSpringServlet.java:130)
+	at org.apache.cxf.transport.servlet.AbstractHTTPServlet.handleRequest(AbstractHTTPServlet.java:221)
+	at org.apache.cxf.transport.servlet.AbstractHTTPServlet.doPost(AbstractHTTPServlet.java:141)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:647)
+	at org.apache.cxf.transport.servlet.AbstractHTTPServlet.service(AbstractHTTPServlet.java:197)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:311)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:116)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:83)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:113)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:101)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:113)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:54)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:45)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)
+	at com.aldata.authentication.GOLDAuthenticationFilter.doFilter(GOLDAuthenticationFilter.java:159)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:87)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:173)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:237)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:167)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.tomee.catalina.OpenEJBValve.invoke(OpenEJBValve.java:45)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:603)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:310)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:722)
+
+02/08/17 17:59:10.DEBUG.111.LOGID[594762] Methode Java = clearTasksTakenBy
+02/08/17 17:59:10.DEBUG.111.LOGID[594762] Class Java = com.aldata.webservices.rest.TaskEngineWebService
+02/08/17 17:59:10.DEBUG.111.LOGID[594762] <executePLSQL>
+02/08/17 17:59:10.DEBUG.111.LOGID[594762] begin PKTask.clearTasksTakenBy(594762, ?, ?); end;
+02/08/17 17:59:10.DEBUG.111.LOGID[594762] register output : 2 4
+02/08/17 17:59:11.DEBUG.111.LOGID[594762] Output : 0
+02/08/17 17:59:11.DEBUG.111.LOGID[594762] </executePLSQL>
+02/08/17 17:59:20.DEBUG.120.LOGID[594763] Methode Java = getUserInformations
+02/08/17 17:59:20.DEBUG.120.LOGID[594763] Class Java = com.aldata.generic.login.GenericLoginWebService
+02/08/17 17:59:20.DEBUG.120.LOGID[594763] select TO_CHAR(CURRENT_DATE,'DD/MM/RR') from dual
+02/08/17 17:59:20.DEBUG.120.LOGID[594763] <queryArray>
+02/08/17 17:59:20.DEBUG.120.LOGID[594763] select TO_CHAR(CURRENT_DATE,'DD/MM/RR') from dual
+02/08/17 17:59:20.DEBUG.120.LOGID[594763] No parameters
+02/08/17 17:59:20.DEBUG.120.LOGID[594763] Retrieving 1 Object(s)...
+02/08/17 17:59:20.DEBUG.120.LOGID[594763] [SELECT] Temps d'execution (ms) : [239]
+02/08/17 17:59:20.DEBUG.120.LOGID[594763] </queryArray>
+02/08/17 17:59:20.DEBUG.120.LOGID[594763] <queryArray>
+02/08/17 17:59:20.DEBUG.120.LOGID[594763] select substr(LANJAVA, 1,2), substr(LANJAVA, 4,5) 
+from langues, adm_users t  
+where aususer = :USER: 
+and ausappli = :APPLI:  
+and langue = LANCODE 
+
+02/08/17 17:59:20.DEBUG.120.LOGID[594763] Query parameters
+:USER:			gb
+:APPLI:			V6MOBILETEST
+
+02/08/17 17:59:21.DEBUG.120.LOGID[594763] Retrieving 1 Object(s)...
+02/08/17 17:59:21.DEBUG.120.LOGID[594763] [SELECT] Temps d'execution (ms) : [303]
+02/08/17 17:59:21.DEBUG.120.LOGID[594763] </queryArray>
+02/08/17 17:59:21.DEBUG.120.LOGID[594763] select substr(LANJAVA, 1,2), substr(LANJAVA, 4,5) 
+from langues, adm_users t  
+where aususer = :USER: 
+and ausappli = :APPLI:  
+and langue = LANCODE 
+
+02/08/17 17:59:21.DEBUG.120.LOGID[594763] <queryArray>
+02/08/17 17:59:21.DEBUG.120.LOGID[594763] SELECT langue FROM adm_users WHERE aususer = :USER: AND ausappli = 'V6MOBILETEST' 
+02/08/17 17:59:21.DEBUG.120.LOGID[594763] Query parameters
+:USER:			gb
+
+02/08/17 17:59:21.DEBUG.120.LOGID[594763] Retrieving 1 Object(s)...
+02/08/17 17:59:21.DEBUG.120.LOGID[594763] [SELECT] Temps d'execution (ms) : [220]
+02/08/17 17:59:21.DEBUG.120.LOGID[594763] </queryArray>
+02/08/17 17:59:21.DEBUG.120.LOGID[594763] <queryArray>
+02/08/17 17:59:21.DEBUG.120.LOGID[594763] select 1 from user_tables where upper(table_name)='TB_VERSION'
+02/08/17 17:59:21.DEBUG.120.LOGID[594763] Query parameters
+
+02/08/17 17:59:21.DEBUG.120.LOGID[594763] Retrieving 0 Object(s)...
+02/08/17 17:59:21.DEBUG.120.LOGID[594763] [SELECT] Temps d'execution (ms) : [282]
+02/08/17 17:59:21.DEBUG.120.LOGID[594763] </queryArray>
+02/08/17 17:59:21.DEBUG.120.LOGID[594763] <queryArray>
+02/08/17 17:59:21.DEBUG.120.LOGID[594763] select verlabqa from (select verid, verlabqa, verdatqa from version where verlabqa like :patchInfo: order by verid desc) where rownum = 1
+02/08/17 17:59:21.DEBUG.120.LOGID[594763] Query parameters
+:patchInfo:		%
+
+02/08/17 17:59:21.DEBUG.120.LOGID[594763] Retrieving 1 Object(s)...
+02/08/17 17:59:21.DEBUG.120.LOGID[594763] [SELECT] Temps d'execution (ms) : [207]
+02/08/17 17:59:21.DEBUG.120.LOGID[594763] </queryArray>
+02/08/17 17:59:21.DEBUG.120.LOGID[594763] <queryArray>
+02/08/17 17:59:21.DEBUG.120.LOGID[594763] SELECT langue FROM adm_users WHERE aususer = :USER: AND ausappli = 'V6MOBILETEST' 
+02/08/17 17:59:21.DEBUG.120.LOGID[594763] Query parameters
+:USER:			gb
+
+02/08/17 17:59:22.DEBUG.120.LOGID[594763] Retrieving 1 Object(s)...
+02/08/17 17:59:22.DEBUG.120.LOGID[594763] [SELECT] Temps d'execution (ms) : [262]
+02/08/17 17:59:22.DEBUG.120.LOGID[594763] </queryArray>
+02/08/17 17:59:22.DEBUG.120.LOGID[594763] select APCLASTUPDATE from ADM_PROFILESCACHE where APCAPPLI = :appli: and APCLANGUE = :lang: and APCID = 'LabelManager' and APCNEEDSUPDATE = 0
+02/08/17 17:59:22.DEBUG.120.LOGID[594763] <queryArray>
+02/08/17 17:59:22.DEBUG.120.LOGID[594763] select APCLASTUPDATE from ADM_PROFILESCACHE where APCAPPLI = :appli: and APCLANGUE = :lang: and APCID = 'LabelManager' and APCNEEDSUPDATE = 0
+02/08/17 17:59:22.DEBUG.120.LOGID[594763] Query parameters
+:appli:			V6MOBILETEST
+:lang:			GB
+
+02/08/17 17:59:22.DEBUG.120.LOGID[594763] Retrieving 1 Object(s)...
+02/08/17 17:59:22.DEBUG.120.LOGID[594763] [SELECT] Temps d'execution (ms) : [177]
+02/08/17 17:59:22.DEBUG.120.LOGID[594763] </queryArray>
+02/08/17 17:59:22.DEBUG.120.LOGID[594764] Methode Java = getUserSettings
+02/08/17 17:59:22.DEBUG.120.LOGID[594764] Class Java = com.aldata.generic.login.GenericLoginWebService
+02/08/17 17:59:22.DEBUG.120.LOGID[594764] <queryArray>
+02/08/17 17:59:22.DEBUG.120.LOGID[594764] select AUSETPARAMID, AUSETPARAMVAL from ADM_USERSETTINGS where AUSETUSER = :userName:  and AUSETAPPLI = :application:
+02/08/17 17:59:22.DEBUG.120.LOGID[594764] Query parameters
+:userName:		gb
+:application:		V6MOBILETEST
+
+02/08/17 17:59:23.DEBUG.120.LOGID[594764] Retrieving 11 Object(s)...
+02/08/17 17:59:23.DEBUG.120.LOGID[594764] [SELECT] Temps d'execution (ms) : [408]
+02/08/17 17:59:23.DEBUG.120.LOGID[594764] </queryArray>
+02/08/17 17:59:23.DEBUG.120.LOGID[594765] Methode Java = GWSMobileMenuInit
+02/08/17 17:59:23.DEBUG.120.LOGID[594765] Class Java = ois.webservices.gsm.common.WSMobileMenuInit
+02/08/17 17:59:23.DEBUG.120.LOGID[594765] <queryArray>
+02/08/17 17:59:23.DEBUG.120.LOGID[594765]   SELECT tameident menunumber , TAMEDESC menudesc, AMEOBJET transactionName, null transCount FROM ADM_MENUS M, TRA_ADM_MENUS T, ADM_PROFILES P, ADM_USERS U      WHERE T.LANGUE = :LANG:       AND APRAPPLI= :APPLI:   AND T.TAMEAPPLI = AMEAPPLI           AND APRIDENT = AMEIDENT        AND T.TAMEIDENT = AMEIDENT        AND APRPROF = AUSPROF     AND AUSUSER = :USER:    AND APRACCES = 1    AND AMEAPPLI = APRAPPLI  AND APRAPPLI = AUSAPPLI    ORDER BY decode(ameparent,'', 0,ameseq)  
+02/08/17 17:59:23.DEBUG.120.LOGID[594765] Query parameters
+:LANG:			GB
+:APPLI:			V6MOBILETEST
+:USER:			gb
+:parent:		54000
+
+02/08/17 17:59:24.DEBUG.120.LOGID[594765] Retrieving 30 Object(s)...
+02/08/17 17:59:24.DEBUG.120.LOGID[594765] [SELECT] Temps d'execution (ms) : [836]
+02/08/17 17:59:24.DEBUG.120.LOGID[594765] </queryArray>
+02/08/17 17:59:24.DEBUG.120.LOGID[594765] <queryArray>
+02/08/17 17:59:24.DEBUG.120.LOGID[594765]   SELECT tameident menunumber , TAMEDESC menudesc, AMEOBJET transactionName, null transCount FROM ADM_MENUS M, TRA_ADM_MENUS T, ADM_PROFILES P, ADM_USERS U      WHERE T.LANGUE = :LANG:       AND APRAPPLI= :APPLI:   AND T.TAMEAPPLI = AMEAPPLI           AND APRIDENT = AMEIDENT        AND T.TAMEIDENT = AMEIDENT        AND APRPROF = AUSPROF     AND AUSUSER = :USER:    AND APRACCES = 1    AND AMEAPPLI = APRAPPLI  AND APRAPPLI = AUSAPPLI    ORDER BY decode(ameparent,'', 0,ameseq)  
+02/08/17 17:59:24.DEBUG.120.LOGID[594765] Query parameters
+:LANG:			GB
+:APPLI:			V6MOBILETEST
+:USER:			gb
+:parent:		54001
+
+02/08/17 17:59:25.DEBUG.120.LOGID[594765] Retrieving 30 Object(s)...
+02/08/17 17:59:25.DEBUG.120.LOGID[594765] [SELECT] Temps d'execution (ms) : [910]
+02/08/17 17:59:25.DEBUG.120.LOGID[594765] </queryArray>
+02/08/17 17:59:50.DEBUG.119.LOGID[594766] Methode Java = clearTasksTakenBy
+02/08/17 17:59:50.DEBUG.119.LOGID[594766] Class Java = com.aldata.webservices.rest.TaskEngineWebService
+02/08/17 17:59:50.DEBUG.119.LOGID[594766] <executePLSQL>
+02/08/17 17:59:50.DEBUG.119.LOGID[594766] begin PKTask.clearTasksTakenBy(594766, ?, ?); end;
+02/08/17 17:59:50.DEBUG.119.LOGID[594766] register output : 2 4
+02/08/17 17:59:50.DEBUG.119.LOGID[594766] Output : 0
+02/08/17 17:59:50.DEBUG.119.LOGID[594766] </executePLSQL>
+02/08/17 18:00:04.DEBUG.114.LOGID[594767] Methode Java = getUserInformations
+02/08/17 18:00:04.DEBUG.114.LOGID[594767] Class Java = com.aldata.generic.login.GenericLoginWebService
+02/08/17 18:00:04.DEBUG.114.LOGID[594767] select TO_CHAR(CURRENT_DATE,'DD/MM/RR') from dual
+02/08/17 18:00:04.DEBUG.114.LOGID[594767] <queryArray>
+02/08/17 18:00:04.DEBUG.114.LOGID[594767] select TO_CHAR(CURRENT_DATE,'DD/MM/RR') from dual
+02/08/17 18:00:04.DEBUG.114.LOGID[594767] No parameters
+02/08/17 18:00:04.DEBUG.114.LOGID[594767] Retrieving 1 Object(s)...
+02/08/17 18:00:04.DEBUG.114.LOGID[594767] [SELECT] Temps d'execution (ms) : [173]
+02/08/17 18:00:04.DEBUG.114.LOGID[594767] </queryArray>
+02/08/17 18:00:04.DEBUG.114.LOGID[594767] <queryArray>
+02/08/17 18:00:04.DEBUG.114.LOGID[594767] select substr(LANJAVA, 1,2), substr(LANJAVA, 4,5) 
+from langues, adm_users t  
+where aususer = :USER: 
+and ausappli = :APPLI:  
+and langue = LANCODE 
+
+02/08/17 18:00:04.DEBUG.114.LOGID[594767] Query parameters
+:USER:			gb
+:APPLI:			V6MOBILETEST
+
+02/08/17 18:00:04.DEBUG.114.LOGID[594767] Retrieving 1 Object(s)...
+02/08/17 18:00:04.DEBUG.114.LOGID[594767] [SELECT] Temps d'execution (ms) : [202]
+02/08/17 18:00:04.DEBUG.114.LOGID[594767] </queryArray>
+02/08/17 18:00:04.DEBUG.114.LOGID[594767] select substr(LANJAVA, 1,2), substr(LANJAVA, 4,5) 
+from langues, adm_users t  
+where aususer = :USER: 
+and ausappli = :APPLI:  
+and langue = LANCODE 
+
+02/08/17 18:00:04.DEBUG.114.LOGID[594767] <queryArray>
+02/08/17 18:00:04.DEBUG.114.LOGID[594767] SELECT langue FROM adm_users WHERE aususer = :USER: AND ausappli = 'V6MOBILETEST' 
+02/08/17 18:00:04.DEBUG.114.LOGID[594767] Query parameters
+:USER:			gb
+
+02/08/17 18:00:05.DEBUG.114.LOGID[594767] Retrieving 1 Object(s)...
+02/08/17 18:00:05.DEBUG.114.LOGID[594767] [SELECT] Temps d'execution (ms) : [251]
+02/08/17 18:00:05.DEBUG.114.LOGID[594767] </queryArray>
+02/08/17 18:00:05.DEBUG.114.LOGID[594767] <queryArray>
+02/08/17 18:00:05.DEBUG.114.LOGID[594767] select 1 from user_tables where upper(table_name)='TB_VERSION'
+02/08/17 18:00:05.DEBUG.114.LOGID[594767] Query parameters
+
+02/08/17 18:00:05.DEBUG.114.LOGID[594767] Retrieving 0 Object(s)...
+02/08/17 18:00:05.DEBUG.114.LOGID[594767] [SELECT] Temps d'execution (ms) : [394]
+02/08/17 18:00:05.DEBUG.114.LOGID[594767] </queryArray>
+02/08/17 18:00:05.DEBUG.114.LOGID[594767] <queryArray>
+02/08/17 18:00:05.DEBUG.114.LOGID[594767] select verlabqa from (select verid, verlabqa, verdatqa from version where verlabqa like :patchInfo: order by verid desc) where rownum = 1
+02/08/17 18:00:05.DEBUG.114.LOGID[594767] Query parameters
+:patchInfo:		%
+
+02/08/17 18:00:05.DEBUG.114.LOGID[594767] Retrieving 1 Object(s)...
+02/08/17 18:00:05.DEBUG.114.LOGID[594767] [SELECT] Temps d'execution (ms) : [222]
+02/08/17 18:00:05.DEBUG.114.LOGID[594767] </queryArray>
+02/08/17 18:00:05.DEBUG.114.LOGID[594767] <queryArray>
+02/08/17 18:00:05.DEBUG.114.LOGID[594767] SELECT langue FROM adm_users WHERE aususer = :USER: AND ausappli = 'V6MOBILETEST' 
+02/08/17 18:00:05.DEBUG.114.LOGID[594767] Query parameters
+:USER:			gb
+
+02/08/17 18:00:05.DEBUG.114.LOGID[594767] Retrieving 1 Object(s)...
+02/08/17 18:00:05.DEBUG.114.LOGID[594767] [SELECT] Temps d'execution (ms) : [183]
+02/08/17 18:00:05.DEBUG.114.LOGID[594767] </queryArray>
+02/08/17 18:00:05.DEBUG.114.LOGID[594767] select APCLASTUPDATE from ADM_PROFILESCACHE where APCAPPLI = :appli: and APCLANGUE = :lang: and APCID = 'LabelManager' and APCNEEDSUPDATE = 0
+02/08/17 18:00:05.DEBUG.114.LOGID[594767] <queryArray>
+02/08/17 18:00:05.DEBUG.114.LOGID[594767] select APCLASTUPDATE from ADM_PROFILESCACHE where APCAPPLI = :appli: and APCLANGUE = :lang: and APCID = 'LabelManager' and APCNEEDSUPDATE = 0
+02/08/17 18:00:05.DEBUG.114.LOGID[594767] Query parameters
+:appli:			V6MOBILETEST
+:lang:			GB
+
+02/08/17 18:00:06.DEBUG.114.LOGID[594767] Retrieving 1 Object(s)...
+02/08/17 18:00:06.DEBUG.114.LOGID[594767] [SELECT] Temps d'execution (ms) : [202]
+02/08/17 18:00:06.DEBUG.114.LOGID[594767] </queryArray>
+02/08/17 18:00:06.DEBUG.114.LOGID[594768] Methode Java = getUserSettings
+02/08/17 18:00:06.DEBUG.114.LOGID[594768] Class Java = com.aldata.generic.login.GenericLoginWebService
+02/08/17 18:00:06.DEBUG.114.LOGID[594768] <queryArray>
+02/08/17 18:00:06.DEBUG.114.LOGID[594768] select AUSETPARAMID, AUSETPARAMVAL from ADM_USERSETTINGS where AUSETUSER = :userName:  and AUSETAPPLI = :application:
+02/08/17 18:00:06.DEBUG.114.LOGID[594768] Query parameters
+:userName:		gb
+:application:		V6MOBILETEST
+
+02/08/17 18:00:07.DEBUG.114.LOGID[594768] Retrieving 11 Object(s)...
+02/08/17 18:00:07.DEBUG.114.LOGID[594768] [SELECT] Temps d'execution (ms) : [420]
+02/08/17 18:00:07.DEBUG.114.LOGID[594768] </queryArray>
+02/08/17 18:00:08.DEBUG.114.LOGID[594769] Methode Java = GWSMobileMenuInit
+02/08/17 18:00:08.DEBUG.114.LOGID[594769] Class Java = ois.webservices.gsm.common.WSMobileMenuInit
+02/08/17 18:00:08.DEBUG.114.LOGID[594769] <queryArray>
+02/08/17 18:00:08.DEBUG.114.LOGID[594769]   SELECT tameident menunumber , TAMEDESC menudesc, AMEOBJET transactionName, null transCount FROM ADM_MENUS M, TRA_ADM_MENUS T, ADM_PROFILES P, ADM_USERS U      WHERE T.LANGUE = :LANG:       AND APRAPPLI= :APPLI:   AND T.TAMEAPPLI = AMEAPPLI           AND APRIDENT = AMEIDENT        AND T.TAMEIDENT = AMEIDENT        AND APRPROF = AUSPROF     AND AUSUSER = :USER:    AND APRACCES = 1    AND AMEAPPLI = APRAPPLI  AND APRAPPLI = AUSAPPLI    ORDER BY decode(ameparent,'', 0,ameseq)  
+02/08/17 18:00:08.DEBUG.114.LOGID[594769] Query parameters
+:LANG:			GB
+:APPLI:			V6MOBILETEST
+:USER:			gb
+:parent:		54000
+
+02/08/17 18:00:08.DEBUG.114.LOGID[594769] Retrieving 30 Object(s)...
+02/08/17 18:00:08.DEBUG.114.LOGID[594769] [SELECT] Temps d'execution (ms) : [781]
+02/08/17 18:00:08.DEBUG.114.LOGID[594769] </queryArray>
+02/08/17 18:00:08.DEBUG.114.LOGID[594769] <queryArray>
+02/08/17 18:00:08.DEBUG.114.LOGID[594769]   SELECT tameident menunumber , TAMEDESC menudesc, AMEOBJET transactionName, null transCount FROM ADM_MENUS M, TRA_ADM_MENUS T, ADM_PROFILES P, ADM_USERS U      WHERE T.LANGUE = :LANG:       AND APRAPPLI= :APPLI:   AND T.TAMEAPPLI = AMEAPPLI           AND APRIDENT = AMEIDENT        AND T.TAMEIDENT = AMEIDENT        AND APRPROF = AUSPROF     AND AUSUSER = :USER:    AND APRACCES = 1    AND AMEAPPLI = APRAPPLI  AND APRAPPLI = AUSAPPLI    ORDER BY decode(ameparent,'', 0,ameseq)  
+02/08/17 18:00:08.DEBUG.114.LOGID[594769] Query parameters
+:LANG:			GB
+:APPLI:			V6MOBILETEST
+:USER:			gb
+:parent:		54001
+
+02/08/17 18:00:09.DEBUG.114.LOGID[594769] Retrieving 30 Object(s)...
+02/08/17 18:00:09.DEBUG.114.LOGID[594769] [SELECT] Temps d'execution (ms) : [871]
+02/08/17 18:00:09.DEBUG.114.LOGID[594769] </queryArray>
+02/08/17 18:00:21.DEBUG.115.LOGID[594770] Methode Java = GWSTestJSONJSON
+02/08/17 18:00:21.DEBUG.115.LOGID[594770] Class Java = ois.webservices.gsm.common.WSTests
+02/08/17 18:00:22.FATAL.115.LOGID[594770] Request does not contain JSON
+02/08/17 18:00:22.FATAL.115.LOGID[594770] Exception during Process
+02/08/17 18:00:22.FATAL.115.LOGID[594770] com.aldata.common.bean.webservice.exception.BusinessException: Request does not contain JSON
+	at ois.webservices.gsm.common.WSTests.GWSTestJSONJSON(WSTests.java:221)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at com.aldata.core.util.ClassLoaderUtil.invokeWebServiceMethod(ClassLoaderUtil.java:100)
+	at com.aldata.webservices.configuration.WebServiceConfiguration.callWebMethod(WebServiceConfiguration.java:296)
+	at com.aldata.webservices.rest.RetailRestConnector.executeBusinessClasses(RetailRestConnector.java:610)
+	at com.aldata.webservices.rest.RetailRestConnector.postData(RetailRestConnector.java:408)
+	at sun.reflect.GeneratedMethodAccessor148.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.apache.cxf.service.invoker.AbstractInvoker.performInvocation(AbstractInvoker.java:180)
+	at org.apache.cxf.service.invoker.AbstractInvoker.invoke(AbstractInvoker.java:96)
+	at org.apache.cxf.jaxrs.JAXRSInvoker.invoke(JAXRSInvoker.java:167)
+	at org.apache.cxf.jaxrs.JAXRSInvoker.invoke(JAXRSInvoker.java:94)
+	at org.apache.cxf.interceptor.ServiceInvokerInterceptor$1.run(ServiceInvokerInterceptor.java:58)
+	at org.apache.cxf.interceptor.ServiceInvokerInterceptor.handleMessage(ServiceInvokerInterceptor.java:94)
+	at org.apache.cxf.phase.PhaseInterceptorChain.doIntercept(PhaseInterceptorChain.java:262)
+	at org.apache.cxf.transport.ChainInitiationObserver.onMessage(ChainInitiationObserver.java:121)
+	at org.apache.cxf.transport.http.AbstractHTTPDestination.invoke(AbstractHTTPDestination.java:211)
+	at org.apache.cxf.transport.servlet.ServletController.invokeDestination(ServletController.java:213)
+	at org.apache.cxf.transport.servlet.ServletController.invoke(ServletController.java:154)
+	at org.apache.cxf.transport.servlet.CXFNonSpringServlet.invoke(CXFNonSpringServlet.java:130)
+	at org.apache.cxf.transport.servlet.AbstractHTTPServlet.handleRequest(AbstractHTTPServlet.java:221)
+	at org.apache.cxf.transport.servlet.AbstractHTTPServlet.doPost(AbstractHTTPServlet.java:141)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:647)
+	at org.apache.cxf.transport.servlet.AbstractHTTPServlet.service(AbstractHTTPServlet.java:197)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:311)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:116)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:83)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:113)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:101)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:113)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:54)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:45)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)
+	at com.aldata.authentication.GOLDAuthenticationFilter.doFilter(GOLDAuthenticationFilter.java:159)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:87)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:173)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:237)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:167)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.tomee.catalina.OpenEJBValve.invoke(OpenEJBValve.java:45)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:603)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:310)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:722)
+
+02/08/17 18:00:31.DEBUG.118.LOGID[594771] Methode Java = GWSTestJSONJSON
+02/08/17 18:00:31.DEBUG.118.LOGID[594771] Class Java = ois.webservices.gsm.common.WSTests
+02/08/17 18:00:31.FATAL.118.LOGID[594771] Request does not contain JSON
+02/08/17 18:00:31.FATAL.118.LOGID[594771] Exception during Process
+02/08/17 18:00:31.FATAL.118.LOGID[594771] com.aldata.common.bean.webservice.exception.BusinessException: Request does not contain JSON
+	at ois.webservices.gsm.common.WSTests.GWSTestJSONJSON(WSTests.java:221)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at com.aldata.core.util.ClassLoaderUtil.invokeWebServiceMethod(ClassLoaderUtil.java:100)
+	at com.aldata.webservices.configuration.WebServiceConfiguration.callWebMethod(WebServiceConfiguration.java:296)
+	at com.aldata.webservices.rest.RetailRestConnector.executeBusinessClasses(RetailRestConnector.java:610)
+	at com.aldata.webservices.rest.RetailRestConnector.postData(RetailRestConnector.java:408)
+	at sun.reflect.GeneratedMethodAccessor148.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.apache.cxf.service.invoker.AbstractInvoker.performInvocation(AbstractInvoker.java:180)
+	at org.apache.cxf.service.invoker.AbstractInvoker.invoke(AbstractInvoker.java:96)
+	at org.apache.cxf.jaxrs.JAXRSInvoker.invoke(JAXRSInvoker.java:167)
+	at org.apache.cxf.jaxrs.JAXRSInvoker.invoke(JAXRSInvoker.java:94)
+	at org.apache.cxf.interceptor.ServiceInvokerInterceptor$1.run(ServiceInvokerInterceptor.java:58)
+	at org.apache.cxf.interceptor.ServiceInvokerInterceptor.handleMessage(ServiceInvokerInterceptor.java:94)
+	at org.apache.cxf.phase.PhaseInterceptorChain.doIntercept(PhaseInterceptorChain.java:262)
+	at org.apache.cxf.transport.ChainInitiationObserver.onMessage(ChainInitiationObserver.java:121)
+	at org.apache.cxf.transport.http.AbstractHTTPDestination.invoke(AbstractHTTPDestination.java:211)
+	at org.apache.cxf.transport.servlet.ServletController.invokeDestination(ServletController.java:213)
+	at org.apache.cxf.transport.servlet.ServletController.invoke(ServletController.java:154)
+	at org.apache.cxf.transport.servlet.CXFNonSpringServlet.invoke(CXFNonSpringServlet.java:130)
+	at org.apache.cxf.transport.servlet.AbstractHTTPServlet.handleRequest(AbstractHTTPServlet.java:221)
+	at org.apache.cxf.transport.servlet.AbstractHTTPServlet.doPost(AbstractHTTPServlet.java:141)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:647)
+	at org.apache.cxf.transport.servlet.AbstractHTTPServlet.service(AbstractHTTPServlet.java:197)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:311)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:116)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:83)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:113)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:101)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:113)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:54)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:45)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)
+	at com.aldata.authentication.GOLDAuthenticationFilter.doFilter(GOLDAuthenticationFilter.java:159)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:87)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:173)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:237)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:167)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.tomee.catalina.OpenEJBValve.invoke(OpenEJBValve.java:45)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:603)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:310)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:722)
+
+02/08/17 18:01:21.DEBUG.117.LOGID[594772] Methode Java = GWSTestJSONXML
+02/08/17 18:01:21.DEBUG.117.LOGID[594772] Class Java = ois.webservices.gsm.common.WSTests
+02/08/17 18:01:21.FATAL.117.LOGID[594772] Request does not contain JSON
+02/08/17 18:01:21.FATAL.117.LOGID[594772] Exception during Process
+02/08/17 18:01:21.FATAL.117.LOGID[594772] com.aldata.common.bean.webservice.exception.BusinessException: Request does not contain JSON
+	at ois.webservices.gsm.common.WSTests.GWSTestJSONXML(WSTests.java:211)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at com.aldata.core.util.ClassLoaderUtil.invokeWebServiceMethod(ClassLoaderUtil.java:100)
+	at com.aldata.webservices.configuration.WebServiceConfiguration.callWebMethod(WebServiceConfiguration.java:296)
+	at com.aldata.webservices.rest.RetailRestConnector.executeBusinessClasses(RetailRestConnector.java:610)
+	at com.aldata.webservices.rest.RetailRestConnector.postData(RetailRestConnector.java:408)
+	at sun.reflect.GeneratedMethodAccessor148.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.apache.cxf.service.invoker.AbstractInvoker.performInvocation(AbstractInvoker.java:180)
+	at org.apache.cxf.service.invoker.AbstractInvoker.invoke(AbstractInvoker.java:96)
+	at org.apache.cxf.jaxrs.JAXRSInvoker.invoke(JAXRSInvoker.java:167)
+	at org.apache.cxf.jaxrs.JAXRSInvoker.invoke(JAXRSInvoker.java:94)
+	at org.apache.cxf.interceptor.ServiceInvokerInterceptor$1.run(ServiceInvokerInterceptor.java:58)
+	at org.apache.cxf.interceptor.ServiceInvokerInterceptor.handleMessage(ServiceInvokerInterceptor.java:94)
+	at org.apache.cxf.phase.PhaseInterceptorChain.doIntercept(PhaseInterceptorChain.java:262)
+	at org.apache.cxf.transport.ChainInitiationObserver.onMessage(ChainInitiationObserver.java:121)
+	at org.apache.cxf.transport.http.AbstractHTTPDestination.invoke(AbstractHTTPDestination.java:211)
+	at org.apache.cxf.transport.servlet.ServletController.invokeDestination(ServletController.java:213)
+	at org.apache.cxf.transport.servlet.ServletController.invoke(ServletController.java:154)
+	at org.apache.cxf.transport.servlet.CXFNonSpringServlet.invoke(CXFNonSpringServlet.java:130)
+	at org.apache.cxf.transport.servlet.AbstractHTTPServlet.handleRequest(AbstractHTTPServlet.java:221)
+	at org.apache.cxf.transport.servlet.AbstractHTTPServlet.doPost(AbstractHTTPServlet.java:141)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:647)
+	at org.apache.cxf.transport.servlet.AbstractHTTPServlet.service(AbstractHTTPServlet.java:197)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:311)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:116)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:83)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:113)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:101)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:113)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:54)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:45)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)
+	at com.aldata.authentication.GOLDAuthenticationFilter.doFilter(GOLDAuthenticationFilter.java:159)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:87)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:173)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:237)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:167)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.tomee.catalina.OpenEJBValve.invoke(OpenEJBValve.java:45)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:603)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:310)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:722)
+
+02/08/17 18:01:21.FATAL.117.LOGID[594772] null
+02/08/17 18:01:21.FATAL.117.LOGID[594772] Exception during Process
+02/08/17 18:01:21.FATAL.117.LOGID[594772] java.lang.NullPointerException
+	at com.aldata.webservices.rest.RetailRestConnector.manageActivity(RetailRestConnector.java:260)
+	at com.aldata.webservices.rest.RetailRestConnector.manageErrorJSON(RetailRestConnector.java:933)
+	at com.aldata.webservices.rest.RetailRestConnector.executeBusinessClasses(RetailRestConnector.java:683)
+	at com.aldata.webservices.rest.RetailRestConnector.postData(RetailRestConnector.java:408)
+	at sun.reflect.GeneratedMethodAccessor148.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.apache.cxf.service.invoker.AbstractInvoker.performInvocation(AbstractInvoker.java:180)
+	at org.apache.cxf.service.invoker.AbstractInvoker.invoke(AbstractInvoker.java:96)
+	at org.apache.cxf.jaxrs.JAXRSInvoker.invoke(JAXRSInvoker.java:167)
+	at org.apache.cxf.jaxrs.JAXRSInvoker.invoke(JAXRSInvoker.java:94)
+	at org.apache.cxf.interceptor.ServiceInvokerInterceptor$1.run(ServiceInvokerInterceptor.java:58)
+	at org.apache.cxf.interceptor.ServiceInvokerInterceptor.handleMessage(ServiceInvokerInterceptor.java:94)
+	at org.apache.cxf.phase.PhaseInterceptorChain.doIntercept(PhaseInterceptorChain.java:262)
+	at org.apache.cxf.transport.ChainInitiationObserver.onMessage(ChainInitiationObserver.java:121)
+	at org.apache.cxf.transport.http.AbstractHTTPDestination.invoke(AbstractHTTPDestination.java:211)
+	at org.apache.cxf.transport.servlet.ServletController.invokeDestination(ServletController.java:213)
+	at org.apache.cxf.transport.servlet.ServletController.invoke(ServletController.java:154)
+	at org.apache.cxf.transport.servlet.CXFNonSpringServlet.invoke(CXFNonSpringServlet.java:130)
+	at org.apache.cxf.transport.servlet.AbstractHTTPServlet.handleRequest(AbstractHTTPServlet.java:221)
+	at org.apache.cxf.transport.servlet.AbstractHTTPServlet.doPost(AbstractHTTPServlet.java:141)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:647)
+	at org.apache.cxf.transport.servlet.AbstractHTTPServlet.service(AbstractHTTPServlet.java:197)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:311)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:116)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:83)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:113)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:101)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:113)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:54)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:45)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)
+	at com.aldata.authentication.GOLDAuthenticationFilter.doFilter(GOLDAuthenticationFilter.java:159)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:87)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:173)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:237)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:167)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.tomee.catalina.OpenEJBValve.invoke(OpenEJBValve.java:45)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:603)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:310)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:722)
+
+02/08/17 18:02:00.DEBUG.116.LOGID[594773] Methode Java = GWSTestJSONXML
+02/08/17 18:02:00.DEBUG.116.LOGID[594773] Class Java = ois.webservices.gsm.common.WSTests
+02/08/17 18:02:00.FATAL.116.LOGID[594773] The output format of the business message is not JSON
+02/08/17 18:02:00.FATAL.116.LOGID[594773] Exception during Process
+02/08/17 18:02:00.FATAL.116.LOGID[594773] RetailRestConnecter:CheckOutputFormat : The output format of the business message is not JSON
+	at com.aldata.webservices.rest.RetailRestConnector.executeBusinessClasses(RetailRestConnector.java:619)
+	at com.aldata.webservices.rest.RetailRestConnector.postData(RetailRestConnector.java:408)
+	at sun.reflect.GeneratedMethodAccessor148.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.apache.cxf.service.invoker.AbstractInvoker.performInvocation(AbstractInvoker.java:180)
+	at org.apache.cxf.service.invoker.AbstractInvoker.invoke(AbstractInvoker.java:96)
+	at org.apache.cxf.jaxrs.JAXRSInvoker.invoke(JAXRSInvoker.java:167)
+	at org.apache.cxf.jaxrs.JAXRSInvoker.invoke(JAXRSInvoker.java:94)
+	at org.apache.cxf.interceptor.ServiceInvokerInterceptor$1.run(ServiceInvokerInterceptor.java:58)
+	at org.apache.cxf.interceptor.ServiceInvokerInterceptor.handleMessage(ServiceInvokerInterceptor.java:94)
+	at org.apache.cxf.phase.PhaseInterceptorChain.doIntercept(PhaseInterceptorChain.java:262)
+	at org.apache.cxf.transport.ChainInitiationObserver.onMessage(ChainInitiationObserver.java:121)
+	at org.apache.cxf.transport.http.AbstractHTTPDestination.invoke(AbstractHTTPDestination.java:211)
+	at org.apache.cxf.transport.servlet.ServletController.invokeDestination(ServletController.java:213)
+	at org.apache.cxf.transport.servlet.ServletController.invoke(ServletController.java:154)
+	at org.apache.cxf.transport.servlet.CXFNonSpringServlet.invoke(CXFNonSpringServlet.java:130)
+	at org.apache.cxf.transport.servlet.AbstractHTTPServlet.handleRequest(AbstractHTTPServlet.java:221)
+	at org.apache.cxf.transport.servlet.AbstractHTTPServlet.doPost(AbstractHTTPServlet.java:141)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:647)
+	at org.apache.cxf.transport.servlet.AbstractHTTPServlet.service(AbstractHTTPServlet.java:197)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:311)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:116)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:83)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:113)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:101)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:113)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:54)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:45)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)
+	at com.aldata.authentication.GOLDAuthenticationFilter.doFilter(GOLDAuthenticationFilter.java:159)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:87)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:173)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:237)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:167)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.tomee.catalina.OpenEJBValve.invoke(OpenEJBValve.java:45)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:603)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:310)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:722)
+
+02/08/17 18:56:52.DEBUG.119.LOGID[594796] Methode Java = getServerInfo
+02/08/17 18:56:52.DEBUG.119.LOGID[594796] Class Java = com.aldata.generic.login.GenericLoginWebService
+02/08/17 18:59:27.DEBUG.115.LOGID[594800] Methode Java = clearTasksTakenBy
+02/08/17 18:59:27.DEBUG.115.LOGID[594800] Class Java = com.aldata.webservices.rest.TaskEngineWebService
+02/08/17 18:59:28.DEBUG.115.LOGID[594800] <executePLSQL>
+02/08/17 18:59:28.DEBUG.115.LOGID[594800] begin PKTask.clearTasksTakenBy(594800, ?, ?); end;
+02/08/17 18:59:29.DEBUG.115.LOGID[594800] register output : 2 4
+02/08/17 18:59:29.DEBUG.115.LOGID[594800] Output : 0
+02/08/17 18:59:30.DEBUG.115.LOGID[594800] </executePLSQL>
+02/08/17 19:00:28.DEBUG.115.LOGID[594802] Methode Java = getUserInformations
+02/08/17 19:00:28.DEBUG.115.LOGID[594802] Class Java = com.aldata.generic.login.GenericLoginWebService
+02/08/17 19:00:28.DEBUG.115.LOGID[594802] select TO_CHAR(CURRENT_DATE,'DD/MM/RR') from dual
+02/08/17 19:00:28.DEBUG.115.LOGID[594802] <queryArray>
+02/08/17 19:00:28.DEBUG.115.LOGID[594802] select TO_CHAR(CURRENT_DATE,'DD/MM/RR') from dual
+02/08/17 19:00:28.DEBUG.115.LOGID[594802] No parameters
+02/08/17 19:00:29.DEBUG.115.LOGID[594802] Retrieving 1 Object(s)...
+02/08/17 19:00:29.DEBUG.115.LOGID[594802] [SELECT] Temps d'execution (ms) : [188]
+02/08/17 19:00:29.DEBUG.115.LOGID[594802] </queryArray>
+02/08/17 19:00:29.DEBUG.115.LOGID[594802] <queryArray>
+02/08/17 19:00:29.DEBUG.115.LOGID[594802] select substr(LANJAVA, 1,2), substr(LANJAVA, 4,5) 
+from langues, adm_users t  
+where aususer = :USER: 
+and ausappli = :APPLI:  
+and langue = LANCODE 
+
+02/08/17 19:00:29.DEBUG.115.LOGID[594802] Query parameters
+:USER:			gb
+:APPLI:			V6MOBILETEST
+
+02/08/17 19:00:29.DEBUG.115.LOGID[594802] Retrieving 1 Object(s)...
+02/08/17 19:00:29.DEBUG.115.LOGID[594802] [SELECT] Temps d'execution (ms) : [184]
+02/08/17 19:00:29.DEBUG.115.LOGID[594802] </queryArray>
+02/08/17 19:00:29.DEBUG.115.LOGID[594802] select substr(LANJAVA, 1,2), substr(LANJAVA, 4,5) 
+from langues, adm_users t  
+where aususer = :USER: 
+and ausappli = :APPLI:  
+and langue = LANCODE 
+
+02/08/17 19:00:29.DEBUG.115.LOGID[594802] <queryArray>
+02/08/17 19:00:29.DEBUG.115.LOGID[594802] SELECT langue FROM adm_users WHERE aususer = :USER: AND ausappli = 'V6MOBILETEST' 
+02/08/17 19:00:29.DEBUG.115.LOGID[594802] Query parameters
+:USER:			gb
+
+02/08/17 19:00:29.DEBUG.115.LOGID[594802] Retrieving 1 Object(s)...
+02/08/17 19:00:29.DEBUG.115.LOGID[594802] [SELECT] Temps d'execution (ms) : [177]
+02/08/17 19:00:29.DEBUG.115.LOGID[594802] </queryArray>
+02/08/17 19:00:29.DEBUG.115.LOGID[594802] <queryArray>
+02/08/17 19:00:29.DEBUG.115.LOGID[594802] select 1 from user_tables where upper(table_name)='TB_VERSION'
+02/08/17 19:00:29.DEBUG.115.LOGID[594802] Query parameters
+
+02/08/17 19:00:29.DEBUG.115.LOGID[594802] Retrieving 0 Object(s)...
+02/08/17 19:00:29.DEBUG.115.LOGID[594802] [SELECT] Temps d'execution (ms) : [183]
+02/08/17 19:00:29.DEBUG.115.LOGID[594802] </queryArray>
+02/08/17 19:00:29.DEBUG.115.LOGID[594802] <queryArray>
+02/08/17 19:00:29.DEBUG.115.LOGID[594802] select verlabqa from (select verid, verlabqa, verdatqa from version where verlabqa like :patchInfo: order by verid desc) where rownum = 1
+02/08/17 19:00:29.DEBUG.115.LOGID[594802] Query parameters
+:patchInfo:		%
+
+02/08/17 19:00:29.DEBUG.115.LOGID[594802] Retrieving 1 Object(s)...
+02/08/17 19:00:29.DEBUG.115.LOGID[594802] [SELECT] Temps d'execution (ms) : [186]
+02/08/17 19:00:29.DEBUG.115.LOGID[594802] </queryArray>
+02/08/17 19:00:29.DEBUG.115.LOGID[594802] <queryArray>
+02/08/17 19:00:29.DEBUG.115.LOGID[594802] SELECT langue FROM adm_users WHERE aususer = :USER: AND ausappli = 'V6MOBILETEST' 
+02/08/17 19:00:29.DEBUG.115.LOGID[594802] Query parameters
+:USER:			gb
+
+02/08/17 19:00:30.DEBUG.115.LOGID[594802] Retrieving 1 Object(s)...
+02/08/17 19:00:30.DEBUG.115.LOGID[594802] [SELECT] Temps d'execution (ms) : [179]
+02/08/17 19:00:30.DEBUG.115.LOGID[594802] </queryArray>
+02/08/17 19:00:30.DEBUG.115.LOGID[594802] select APCLASTUPDATE from ADM_PROFILESCACHE where APCAPPLI = :appli: and APCLANGUE = :lang: and APCID = 'LabelManager' and APCNEEDSUPDATE = 0
+02/08/17 19:00:30.DEBUG.115.LOGID[594802] <queryArray>
+02/08/17 19:00:30.DEBUG.115.LOGID[594802] select APCLASTUPDATE from ADM_PROFILESCACHE where APCAPPLI = :appli: and APCLANGUE = :lang: and APCID = 'LabelManager' and APCNEEDSUPDATE = 0
+02/08/17 19:00:30.DEBUG.115.LOGID[594802] Query parameters
+:appli:			V6MOBILETEST
+:lang:			GB
+
+02/08/17 19:00:30.DEBUG.115.LOGID[594802] Retrieving 1 Object(s)...
+02/08/17 19:00:30.DEBUG.115.LOGID[594802] [SELECT] Temps d'execution (ms) : [182]
+02/08/17 19:00:30.DEBUG.115.LOGID[594802] </queryArray>
+02/08/17 19:00:30.DEBUG.115.LOGID[594803] Methode Java = getUserSettings
+02/08/17 19:00:30.DEBUG.115.LOGID[594803] Class Java = com.aldata.generic.login.GenericLoginWebService
+02/08/17 19:00:30.DEBUG.115.LOGID[594803] <queryArray>
+02/08/17 19:00:30.DEBUG.115.LOGID[594803] select AUSETPARAMID, AUSETPARAMVAL from ADM_USERSETTINGS where AUSETUSER = :userName:  and AUSETAPPLI = :application:
+02/08/17 19:00:30.DEBUG.115.LOGID[594803] Query parameters
+:userName:		gb
+:application:		V6MOBILETEST
+
+02/08/17 19:00:31.DEBUG.115.LOGID[594803] Retrieving 11 Object(s)...
+02/08/17 19:00:31.DEBUG.115.LOGID[594803] [SELECT] Temps d'execution (ms) : [374]
+02/08/17 19:00:31.DEBUG.115.LOGID[594803] </queryArray>
+02/08/17 19:00:32.DEBUG.115.LOGID[594804] Methode Java = GWSMobileMenuInit
+02/08/17 19:00:32.DEBUG.115.LOGID[594804] Class Java = ois.webservices.gsm.common.WSMobileMenuInit
+02/08/17 19:00:32.DEBUG.115.LOGID[594804] <queryArray>
+02/08/17 19:00:32.DEBUG.115.LOGID[594804]   SELECT tameident menunumber , TAMEDESC menudesc, AMEOBJET transactionName, null transCount FROM ADM_MENUS M, TRA_ADM_MENUS T, ADM_PROFILES P, ADM_USERS U      WHERE T.LANGUE = :LANG:       AND APRAPPLI= :APPLI:   AND T.TAMEAPPLI = AMEAPPLI           AND APRIDENT = AMEIDENT        AND T.TAMEIDENT = AMEIDENT        AND APRPROF = AUSPROF     AND AUSUSER = :USER:    AND APRACCES = 1    AND AMEAPPLI = APRAPPLI  AND APRAPPLI = AUSAPPLI    ORDER BY decode(ameparent,'', 0,ameseq)  
+02/08/17 19:00:32.DEBUG.115.LOGID[594804] Query parameters
+:LANG:			GB
+:APPLI:			V6MOBILETEST
+:USER:			gb
+:parent:		54000
+
+02/08/17 19:00:33.DEBUG.115.LOGID[594804] Retrieving 30 Object(s)...
+02/08/17 19:00:33.DEBUG.115.LOGID[594804] [SELECT] Temps d'execution (ms) : [930]
+02/08/17 19:00:33.DEBUG.115.LOGID[594804] </queryArray>
+02/08/17 19:00:33.DEBUG.115.LOGID[594804] <queryArray>
+02/08/17 19:00:33.DEBUG.115.LOGID[594804]   SELECT tameident menunumber , TAMEDESC menudesc, AMEOBJET transactionName, null transCount FROM ADM_MENUS M, TRA_ADM_MENUS T, ADM_PROFILES P, ADM_USERS U      WHERE T.LANGUE = :LANG:       AND APRAPPLI= :APPLI:   AND T.TAMEAPPLI = AMEAPPLI           AND APRIDENT = AMEIDENT        AND T.TAMEIDENT = AMEIDENT        AND APRPROF = AUSPROF     AND AUSUSER = :USER:    AND APRACCES = 1    AND AMEAPPLI = APRAPPLI  AND APRAPPLI = AUSAPPLI    ORDER BY decode(ameparent,'', 0,ameseq)  
+02/08/17 19:00:33.DEBUG.115.LOGID[594804] Query parameters
+:LANG:			GB
+:APPLI:			V6MOBILETEST
+:USER:			gb
+:parent:		54001
+
+02/08/17 19:00:33.DEBUG.115.LOGID[594804] Retrieving 30 Object(s)...
+02/08/17 19:00:33.DEBUG.115.LOGID[594804] [SELECT] Temps d'execution (ms) : [855]
+02/08/17 19:00:33.DEBUG.115.LOGID[594804] </queryArray>
+02/08/17 19:03:24.DEBUG.112.LOGID[594813] Methode Java = clearTasksTakenBy
+02/08/17 19:03:24.DEBUG.112.LOGID[594813] Class Java = com.aldata.webservices.rest.TaskEngineWebService
+02/08/17 19:03:24.DEBUG.112.LOGID[594813] <executePLSQL>
+02/08/17 19:03:24.DEBUG.112.LOGID[594813] begin PKTask.clearTasksTakenBy(594813, ?, ?); end;
+02/08/17 19:03:24.DEBUG.112.LOGID[594813] register output : 2 4
+02/08/17 19:03:24.DEBUG.112.LOGID[594813] Output : 0
+02/08/17 19:03:24.DEBUG.112.LOGID[594813] </executePLSQL>

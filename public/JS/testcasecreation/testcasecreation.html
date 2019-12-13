@@ -1,0 +1,57 @@
+<div ng-controller="TestCaseCreationController">
+	<h4 class="text-center">Test Cases Creation/Modification</h4>
+	<div class="row" style="padding-bottom:15px;">
+		<div class="col-sm-2">
+			<input type="text" class="form-control input-sm" placeholder="Test Case name" ng-model="newTestCase.name" style="margin-bottom: 25px;margin-top: 15px;">
+			<select class="form-control input-sm" placeholder="" ng-model="newTestCase.wstemplate">
+				<option value="" selected>Web Service Template</option>
+				<option ng-repeat="wt in wsTemplates" value="{{wt.name}}" selected>{{wt.name}}</option>
+			</select>
+		</div>
+		<div class="col-sm-2">
+			<select class="form-control input-sm" placeholder="" ng-model="newTestCase.wsheadertemplate" style="margin-bottom: 25px;margin-top: 15px;">
+				<option value="" selected>Header Template</option>
+				<option ng-repeat="ht in headerTemplates" value="{{ht.name}}" selected>{{ht.name}}</option>
+			</select>
+			<select class="form-control input-sm" placeholder="" ng-model="newTestCase.wsspecreqtemplate">
+				<option value="" selected>Request Template</option>
+				<option ng-repeat="sr in srTemplates" value="{{sr.name}}" selected>{{sr.name}}</option>
+			</select>
+		</div>
+		<div class="col-sm-3">
+			<textarea class="form-control input-sm" rows="6" ng-model="newTestCase.inputdata" placeholder="Input data"></textarea>
+		</div>
+		<div class="col-sm-3">
+			<textarea class="form-control input-sm" rows="6" ng-model="newTestCase.outputdata" placeholder="Output data"></textarea>
+		</div>
+		<div class="col-sm-2">
+			<button type="submit" class="btn btn-primary btn-block btn-sm" ng-click="createTestCase()" style="margin-top: 40px;">Add</button>
+		</div>
+	</div>
+	<div class="table-responsive">
+		<table class="table table-bordered table-striped">
+			<thead>
+				<tr class="info">
+					<th>Name</th>
+					<th>Web Service</th>
+					<th>Headers</th>
+					<th>Specific Template</th>
+					<th>Input data</th>
+					<th>Output data</th>
+					<th>Actions</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr ng-repeat="testcase in testcaseslist">
+					<td>{{testcase.name}}</td>
+					<td>{{testcase.wstemplate}}</td>
+					<td>{{testcase.wsheadertemplate}}</td>
+					<td>{{testcase.wsspecreqtemplate}}</td>
+					<td><div style="height: 16px;overflow: hidden;">{{testcase.inputdata}}</div></td>
+					<td><div style="height: 16px;overflow: hidden;">{{testcase.outputdata}}</div></td>
+					<td><span class="glyphicon glyphicon-remove" ng-click="removeTestCase(testcase._id)"></span></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>

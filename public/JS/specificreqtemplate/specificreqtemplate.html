@@ -1,0 +1,128 @@
+<div ng-controller="SpecificReqTemplateController">
+	<h4 class="text-center">Specific Request Template and Header Creation/Modification</h4>
+	<div class="row">
+		<div class="col-sm-12">
+			<div class="panel panel-default">
+				<div class="panel-heading text-center"><b>Request Templates</b><span class="pull-right"><span class="glyphicon glyphicon-collapse-down" ng-click="showSpecRequest(false)"></span> / <span class="glyphicon glyphicon-collapse-up" ng-click="showSpecRequest(true)"></span></span></div>
+				<div class="panel-body" ng-hide="hideSpecRequest">
+					<div class="col-sm-4">
+						<textarea style="margin-bottom:5px;" class="form-control input-sm" rows="6" ng-model="reqTemplate.template" placeholder="Template"></textarea>
+					</div>
+					<div class="col-sm-2">
+						<input type="text" class="form-control input-sm" placeholder="Template name" ng-model="reqTemplate.name" style="margin-bottom:10px;">
+						<select class="form-control input-sm" placeholder="" ng-model="reqTemplate.type" style="margin-bottom:10px;">
+							<option value="" selected>Type</option>
+							<option value="text/json">JSON</option>
+							<option value="text/xml">XML</option>
+						</select>
+						<button type="submit" class="btn btn-primary btn-block btn-sm" ng-click="createSpecReqTemplate()">Add</button>
+					</div>
+					<div class="col-sm-6">
+						<div class="alert alert-warning" role="alert">
+							Example XML : 	&lt;requestHeader&gt; <span style="padding-left:60px;">JSON : {key1: value1, key2:value2}</span><br/>
+												<span style="padding-left:110px;">--BODY--</span><br/>
+											<span style="padding-left:85px;">&lt;/requestHeader&gt;</span><br/>
+								XML : --BODY-- will be replaced with the request format given in the web service template<br/>
+								JSON : additional values to be added before sending the request
+						</div>
+					</div>
+				</div>
+				<table class="table table-bordered table-striped" ng-hide="hideSpecRequest">
+					<thead>
+						<tr class="info">
+							<th>Template Name</th>
+							<th>Request template</th>
+							<th>type</th>
+							<th>Actions</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr ng-repeat="template in reqTemplatesList">
+							<td>{{template.name}}</td>
+							<td><div style="height: 16px;overflow: hidden;">{{template.template}}</div></td>
+							<td>{{template.type}}</td>
+							<td><span class="glyphicon glyphicon-remove" ng-click="removeSpecReqTemplate(template._id)"></span></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-12">
+			<div class="panel panel-default">
+				<div class="panel-heading text-center"><b>Headers</b><span class="pull-right"><span class="glyphicon glyphicon-collapse-down" ng-click="showSpecHeaders(false)"></span> / <span ng-click="showSpecHeaders(true)" class="glyphicon glyphicon-collapse-up"></span></span></div>
+				<div class="panel-body" ng-hide="hideSpecHeaders">
+					<div class="col-sm-4">
+					<textarea style="margin-bottom:5px;" class="form-control input-sm" rows="6" ng-model="headerTemplate.template" placeholder="Template"></textarea>
+					</div>
+					<div class="col-sm-2">
+						<input type="text" class="form-control input-sm" placeholder="Template name" ng-model="headerTemplate.name" style="margin-bottom:20px;margin-top: 20px;">
+						<button type="submit" class="btn btn-primary btn-block btn-sm" ng-click="createHeaderTemplate()">Add</button>
+					</div>
+					<div class="col-sm-6">
+						<div class="alert alert-warning" role="alert">
+							Example : 	{"key1":"value1", "key2":"value2"}						
+						</div>
+					</div>
+				</div>
+				<table class="table table-bordered table-striped" ng-hide="hideSpecHeaders">
+					<thead>
+						<tr class="info">
+							<th>Template Name</th>
+							<th>Header template</th>
+							<th>Actions</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr ng-repeat="htemplate in headerTemplateList">
+							<td>{{htemplate.name}}</td>
+							<td><div style="height: 16px;overflow: hidden;">{{htemplate.template}}</div></td>
+							<td><span class="glyphicon glyphicon-remove" ng-click="removeHeaderTemplate(htemplate._id)"></span></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			
+		</div>
+	</div>
+	<!--
+	<div class="row">
+		<div class="col-sm-4 text-center">
+			<form>
+				<textarea style="margin-bottom:5px;" class="form-control" rows="6" ng-model="newReqTemplate"></textarea>
+				<button type="submit" class="btn btn-primary btn-block" ng-click="createWSTemplate()">Add</button>
+			</form>
+		</div>
+		<div class="col-sm-3">
+			<div class="alert alert-warning" role="alert">
+				Example : 	&lt;requestHeader&gt;<br/>
+									<span style="padding-left:85px;">--BODY--</span><br/>
+								<span style="padding-left:57px;">&lt;/requestHeader&gt;</span><br/>
+					--BODY-- will be replace the request format given in the web service template
+				
+			</div>
+		</div>
+		<div class="col-sm-5 text-center">
+			<table class="table table-bordered table-striped">
+				<thead>
+					<tr>
+						<th>Request Template</th>
+						<th>Actions</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr ng-repeat="template in templatesList">
+						<td>{{template.requestFormat}}</td>
+						<td>
+							  <span class="glyphicon glyphicon-remove" ng-click="removeWSTemplate(template._id)"></span>
+							  <span class="glyphicon glyphicon-pencil" ng-click="editWSTemplate(template)"></span>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		
+	</div>
+	-->
+</div>

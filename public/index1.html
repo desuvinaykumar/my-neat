@@ -1,0 +1,81 @@
+<!doctype html>
+
+<!-- ASSIGN OUR ANGULAR MODULE -->
+<html ng-app="TestCodesModule">
+<head>
+    <!-- META -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Optimize mobile viewport -->
+
+    <title>Automation Demo Application</title>
+
+    <!-- SCROLLS -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"><!-- load bootstrap -->
+    <style>
+        html                    { overflow-y:scroll; }
+        body                    { padding-top:50px; }
+    </style>
+
+    <!-- SPELLS -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script><!-- load jquery -->
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script><!-- load angular -->
+    <script src="core.js"></script>
+
+</head>
+<!-- SET THE CONTROLLER AND GET ALL test codes -->
+<body ng-controller="TestCodesModuleController">
+    <div class="container">
+
+		<div class="jumbotron text-center">
+            <h1>Automation Demo Application</h1>
+        </div>
+
+        <!-- FORM TO CREATE Test code -->
+        <div class="row">
+            <div class="col-sm-3 text-center">
+                <form>
+                    <div class="form-group">
+                        <!-- BIND THIS VALUE TO formData.text IN ANGULAR -->
+                        <input type="text" class="form-control input-lg text-center" placeholder="Code Snippet to execute" ng-model="formData.text">
+                    </div>
+                </form>
+            </div>
+			<div class="col-sm-1 text-center">
+				<!-- createToDo() WILL CREATE NEW test code -->
+				<button type="submit" class="btn btn-primary btn-lg btn-block" ng-click="createTestCode()">Add</button>
+			</div>
+			<div class="col-sm-offset-4 col-sm-4">
+				<button type="submit" class="btn btn-primary btn-lg btn-block">Execute Snippets</button>
+			</div>
+        </div>
+		
+		<!-- TODO LIST -->
+        <div class="row">
+            <div class="col-sm-4">
+				<!-- LOOP OVER THE test code IN $scope.testCodes -->
+				<ul class="list-group">
+					<li class="list-group-item" style="font-weight: bold;background-color: #eee">List of Code Snippets</li>
+					<li class="list-group-item" ng-repeat="testcode in testCodes">
+						{{ testcode.text }}
+						<span class="glyphicon glyphicon-remove pull-right" aria-hidden="true" ng-click="deleteTestCode(testcode._id)"></span>
+					</li>
+				</ul>
+
+            </div>
+			<div class="col-sm-offset-4 col-sm-4">
+				<!-- LOOP OVER THE test code IN $scope.testCodes -->
+				<ul class="list-group">
+					<li class="list-group-item" style="font-weight: bold;background-color: #eee">List of Clients connected</li>
+					<li class="list-group-item" ng-repeat="webClient in webClients">
+						{{ webClient.clientId }}
+						<!--<span class="glyphicon glyphicon-remove pull-right" aria-hidden="true" ng-click="deleteTestCode(testcode._id)"></span>-->
+					</li>
+				</ul>
+
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!doctype html>
+
+<!-- ASSIGN OUR ANGULAR MODULE -->
+<html ng-app="WebServiceAutomateModule">
+<head>
+    <!-- META -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Optimize mobile viewport -->
+
+    <title>New Era of Automate Testing</title>
+
+    <!-- SCROLLS -->
+    <link rel="stylesheet" href="bootstrap\css\bootstrap.css"><!-- load bootstrap -->
+    <style>
+        html                    { overflow-y:scroll; }
+        body                    { padding-top:20px; }
+		@media (min-width: 1400px){
+		.container {
+			width: 1400px;
+		}}
+    </style>
+
+    <!-- SPELLS -->
+    <script src="jquery.2.0.3.min.js"></script><!-- load jquery -->
+	<script src="bootstrap/js/bootstrap.js"></script>
+    <script src="angular/angular1.6.4.min.js"></script><!-- load angular -->
+	<script src="angular/angular-route1.6.4.min.js"></script>
+    <script src="JS/webserviceAutomate.js"></script>
+	<script src="JS/routes.js"></script>
+	
+	<script src="JS/wstemplate/wstemplatecontroller.js"></script>
+	<script src="JS/specificreqtemplate/specificreqtemplatecontroller.js"></script>
+	<script src="JS/testcasecreation/testcasecreationcontroller.js"></script>
+	<script src="JS/testcaseexecution/testcaseexecutioncontroller.js"></script>
+	<script src="JS/analyzefile/analyzefilecontroller.js"></script>
+	
+	<script>
+		function loadFunc(){
+			location.hash="";
+		}
+	</script>
+
+</head>
+<!-- SET THE CONTROLLER AND GET ALL test codes -->
+<body ng-controller="WebServiceAutomateModuleController" onload="loadFunc()">
+    <div class="container">
+
+		<h3><span class="pull-right">N<small>ew</small> E<small>ra of </small>A<small>utomation</small> T<small>esting</small><span ng-click="showHelpPage()" style="padding-left:10px;cursor:pointer;" class="glyphicon glyphicon-question-sign"></span></span></h3>
+        <div class="btn-group btn-group-justified" role="group" style="padding-bottom:20px;">
+			<a href="#!home" class="btn btn-primary" role="button">Home</a>
+			<a href="#!wstemplate" class="btn btn-primary" role="button">Web Service Template</a>
+			<a href="#!specreqtemplate" class="btn btn-primary" role="button">Specific Parameters</a>
+			<a href="#!testcasecreation" class="btn btn-primary" role="button">Test Cases</a>
+			<a href="#!testcaseexecution" class="btn btn-primary" role="button">Execution</a>
+			<a href="#!analyze" class="btn btn-primary" role="button">GOLD Logs Analyser</a>
+		</div>
+		
+		<div ng-view style="font-size:12px;"></div>
+
+    </div>
+
+</body>
+</html>
