@@ -8,19 +8,12 @@ var mongoose = require('mongoose');                     // mongoose for mongodb
 var morgan = require('morgan');             // log requests to the console (express4)
 var bodyParser = require('body-parser');    // pull information from HTML POST (express4)
 var methodOverride = require('method-override'); // simulate DELETE and PUT (express4)
-var Server = require('ws').Server;
-var ws = new Server({server: serverinst });
 var formidable = require('formidable');
 var fs = require('fs');
 var path = require('path');
 
-var server_port = process.env.OPENSHIFT_NODEJS_PORT || 8080
-var server_ip_address = process.env.OPENSHIFT_NODEJS_IP || '127.0.0.1'
-var mongodb_connection_string = 'mongodb://127.0.0.1:27017/' + "automation";
-//take advantage of openshift env vars when available:
-if(process.env.OPENSHIFT_MONGODB_DB_URL){
-  mongodb_connection_string = process.env.OPENSHIFT_MONGODB_DB_URL + "automation";
-}
+var server_port = process.env.PORT || 5000
+var mongodb_connection_string = 'mongodb://desuvinaykumar:Mydb*123@ds353738.mlab.com:53738/' + "automation";
 
 var et = require('elementtree');
 
@@ -29,20 +22,6 @@ var webClients = [];
 // configuration =================
 
 mongoose.connect(mongodb_connection_string);     // connect to mongoDB database on modulus.io
-
-ws.on('connection', function(w){
-  
-  w.on('message', function(msg){
-    console.log('message from client');
-  });
-  
-  w.on('close', function() {
-    webClients.splice(webClients.indexOf(this),1);
-  });
-	console.log("client connected");
-	//w.send('alert("hello")');
-	webClients.push(w);
-});
 
 app.use(express.static(__dirname + '/public'));                 // set the static files location /public/img will be /img for users
 app.use(morgan('dev'));                                         // log every request to the console
@@ -709,6 +688,6 @@ app.get('*', function(req, res) {
 });
 
 // listen (start app with node server.js) ======================================
-serverinst.listen(server_port, server_ip_address,function () {
-  console.log( "Listening on " + server_ip_address + ", port " + server_port )
+serverinst.listen(server_port,function () {
+  console.log( "Listening on port " + server_port )
 });
