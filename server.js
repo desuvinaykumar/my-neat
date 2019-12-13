@@ -3,7 +3,6 @@ var http = require('http')
 var request = require('request');
 var express  = require('express');
 var app      = express();                               // create our app w/ express
-var serverinst = http.createServer(app);
 var mongoose = require('mongoose');                     // mongoose for mongodb
 var morgan = require('morgan');             // log requests to the console (express4)
 var bodyParser = require('body-parser');    // pull information from HTML POST (express4)
@@ -675,6 +674,6 @@ app.get('*', function(req, res) {
 });
 
 // listen (start app with node server.js) ======================================
-serverinst.listen(server_port,function () {
+app.listen(server_port,function () {
   console.log( "Listening on port " + server_port )
 });
