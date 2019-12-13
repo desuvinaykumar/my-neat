@@ -12,7 +12,7 @@ var fs = require('fs');
 var path = require('path');
 
 var server_port = process.env.PORT || 5000
-var mongodb_connection_string = 'mongodb://mydb:mydb123@ds353738.mlab.com:53738/' + "automation";
+var mongodb_connection_string = 'mongodb://mydb:mydb123@ds353358.mlab.com:53358/heroku_xpgw6dwl8/';
 
 var et = require('elementtree');
 
