@@ -12,7 +12,7 @@ var fs = require('fs');
 var path = require('path');
 
 var server_port = process.env.PORT || 5000
-var mongodb_connection_string = 'mongodb://desuvinaykumar:Mydb*123@ds353738.mlab.com:53738/' + "automation";
+var mongodb_connection_string = 'mongodb://<desuvinaykumar>:<Mydb*123>@ds353738.mlab.com:53738/' + "automation";
 
 var et = require('elementtree');
 
@@ -572,15 +572,6 @@ app.get('/api/WSTemplates', function(req, res) {
 });
 
 app.post('/api/WSTemplates', function(req, res) {
-	res.json({
-					name : req.body.name,
-					url : req.body.url,
-					httpmethod : req.body.httpmethod,
-					requestType : req.body.requestType,
-					responseType : req.body.responseType,
-					requestFormat : req.body.requestFormat,
-				});
-	return;
 	// create a todo, information comes from AJAX request from Angular
 	WSTemplates.find({name:req.body.name}, function(err, template){
 		if (err){
