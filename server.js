@@ -73,8 +73,8 @@ var ExecutionResults = mongoose.model('ExecutionResults', {
 
 // api ---------------------------------------------------------------------
 app.delete('/api/fileOperation/:filename', function(req, res) {
-	fs.unlink(__dirname+"/uploads/"+req.params.filename, function(err){
-		fs.readdir(__dirname+"/uploads", function(err, files) {
+	fs.unlink(process.cwd()+"/uploads/"+req.params.filename, function(err){
+		fs.readdir(process.cwd()+"/uploads", function(err, files) {
 			if (err){
 				res.end({});
 				return;
@@ -91,7 +91,7 @@ app.delete('/api/fileOperation/:filename', function(req, res) {
 });
 
 app.get('/api/analyzeFile/:filename', function(req,res){
-	fs.readFile(__dirname+"/uploads/"+req.params.filename, function(err, data) {
+	fs.readFile(process.cwd()+"/uploads/"+req.params.filename, function(err, data) {
 		if(err) throw err;
 		var array = data.toString().split("\n");
 		var tempAr = {};
@@ -124,7 +124,7 @@ app.get('/api/analyzeFile/:filename', function(req,res){
 
 app.get('/api/fileOperation', function(req, res) {
 
-	fs.readdir(__dirname+"/uploads", function(err, files) {
+	fs.readdir(process.cwd()+"/uploads", function(err, files) {
 		if (err){
 			res.end("");
 			return;
@@ -147,7 +147,7 @@ app.post('/upload', function(req, res){
 	form.multiples = true;
 
 	// store all uploads in the /uploads directory
-	form.uploadDir = path.join(__dirname, '/uploads');
+	form.uploadDir = path.join(process.cwd(), '/uploads');
 
 	// every time a file has been uploaded successfully,
 	// rename it to it's orignal name
